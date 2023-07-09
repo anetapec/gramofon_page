@@ -17,4 +17,7 @@ class Local(models.Model):
         if self.number_of_levels is not None:
             return f" Lokal {self.number_of_levels} poziomowy o powierzchni {self.area} m2 do {self.nunber_of_people} osób." 
         return f"Lokal o powierzchni {self.area} m2 do {self.nunber_of_people} osób." 
+    
+
+    # sprawdzenie git
 
