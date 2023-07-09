@@ -20,4 +20,5 @@ class Local(models.Model):
     
 
     # sprawdzenie git
+    
 
