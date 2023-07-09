@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Python: update",
+            "type": "python",
+            "request": "launch",
+            "program": "automation/update.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
