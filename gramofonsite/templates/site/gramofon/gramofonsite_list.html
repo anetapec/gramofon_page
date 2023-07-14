@@ -1,0 +1,101 @@
+{% extends "site/base.html" %} 
+{% load static %} 
+{% block title %}Gramofon-Twoje miejsce na Urodziny i Imprezy w Gdyni{% endblock %}
+{% block content %}
+<!-- <div id="sidebar"> -->
+       
+  <h1>GRAMOFON</h1>
+  <!-- <div class="star" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);";>✻</div> -->
+  <!-- </div> -->
+  <h4>URODZINY I IMPREZY OKOLICZNOŚCIOWE</h4>
+</div>
+  {% for local in locals %}
+ <h3>{{ local.title }}</h3>
+ <link rel="stylesheet" href="{% static 'styles.css' %}">
+ <p>{{ local }}</p>
+ <p><a href="">{{ local.more_info}}</a></a></p>
+ <img src="/media//{{lockals.image}}">
+ {% endfor %}
+{% endblock %}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="pl"> -->
+<!-- <head> -->
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <title>gramofon-lokal</title> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" -->
+        <!-- integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+<!--  -->
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+          <!-- <a class="navbar-brand" href="#">GRAMOFON-logo</a> -->
+          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> -->
+            <!-- <span class="navbar-toggler-icon"></span> -->
+          <!-- </button> -->
+          <!-- <div class="collapse navbar-collapse" id="navbarNavDropdown"> -->
+            <!-- <ul class="navbar-nav"> -->
+              <!-- <li class="nav-item active"> -->
+                <!-- <a class="nav-link" href="#">STRONA GŁÓWNA</a> -->
+              <!-- </li> -->
+              <!-- <li class="nav-item"> -->
+                <!-- <a class="nav-link" href="/gramofon-morska">MORSKA</a> -->
+              <!-- </li> -->
+              <!-- <li class="nav-item"> -->
+                <!-- <a class="nav-link" href="#">GRABÓWEK</a> -->
+              <!-- </li> -->
+              <!-- <a class="nav-link" href="#">CHYLONIA</a> -->
+              <!-- <li class="nav-item dropdown"> -->
+                <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
+                  <!-- IMPREZY CATERINGOWE -->
+                <!-- </a> -->
+                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> -->
+                  <!-- <a class="dropdown-item" href="#">Action</a> -->
+                  <!-- <a class="dropdown-item" href="#">Another action</a> -->
+                  <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                <!-- </div> -->
+              <!-- </li> -->
+              <!-- <a class="nav-link" href="#">KALENDARZ</a> -->
+              <!-- <a class="nav-link" href="#">KONTAKT</a> -->
+              <!-- <a class="nav-link" href="#">REGULAMIN</a> -->
+            <!-- </ul> -->
+          <!-- </div> -->
+        <!-- </nav> -->
+<!-- </head> -->
+<!--  -->
+<!-- <body> -->
+    <!-- <div class="container"> -->
+        <!-- <h1>GRAMOFON</h1> -->
+        <!-- <div class="star" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);";>✻</div> -->
+<!--  -->
+        <!-- </div> -->
+        <!-- <h4>URODZINY I IMPREZY OKOLICZNOŚCIOWE</h4> -->
+    <!-- </div> -->
+<!--      -->
+    <!-- <h5>TRZY LOKALE DO WYBORU !</h5> -->
+<!--  -->
+    <!-- {% for local in locals %} -->
+    <!-- <h3>{{ local.title }}</h3> -->
+    <!-- <link rel="stylesheet" href="{% static 'styles.css' %}"> -->
+    <!-- <p>{{ local }}</p> -->
+    <!-- <p><a href="">{{ local.more_info}}</a></a></p> -->
+    <!-- <img src="/media//{{lockals.image}}"> -->
+    <!-- {% endfor %} -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!-- </body> -->
+<!--  -->
+<!-- </html> -->
