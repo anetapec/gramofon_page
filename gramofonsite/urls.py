@@ -3,14 +3,16 @@ from . import views
 from django.conf import settings
 from django.conf.urls.static import static
 
+
+app_name = 'gramofonsite'
 urlpatterns = [
     path('', views.gramofonsite_list, name='gramofonsite_list'), 
-    path('gramofon-morska', views.morska, name='gramofon-morska'), 
+    path('gramofon-morska', views.morska, name='gramofon-morska'),
 
 
 
     
-] #+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
 

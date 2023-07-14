@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Local
 
-admin.site.register(Local)
 
+@admin.register(Local)
 class TopicAdmin(admin.ModelAdmin):
-    list_display = ['Title']
+    list_display = ['title' ]

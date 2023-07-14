@@ -21,7 +21,7 @@ from gramofonsite import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('gramofonsite.urls')),
-    path('', views.gramofonsite_list, name='gramofonsite_list'),
-    path('gramofon-morska', views.morska , name='morska')
+    # path('', views.gramofonsite_list, name='gramofonsite_list'),
+    # path('gramofon-morska/', views.morska , name='morska')
     
 ]
