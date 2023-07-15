@@ -8,4 +8,8 @@ def gramofonsite_list(request):
 def morska(request):
     #locals = Local.objects.all()  # inquiry to database
     return render(request, '/home/aneta/software/repos/gramofon/gramofon_page/gramofonsite/templates/site/gramofon/morska.html')
+
+def sidebar(request):
+    #locals = Local.objects.all()  # inquiry to database
+    return render(request, '/home/aneta/software/repos/gramofon/gramofon_page/gramofonsite/templates/site/gramofon/sidebar.html')
   
