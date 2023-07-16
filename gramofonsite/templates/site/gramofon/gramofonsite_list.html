@@ -8,14 +8,24 @@
   <!-- <div class="star" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);";>✻</div> -->
   <!-- </div> -->
   <h4>URODZINY I IMPREZY OKOLICZNOŚCIOWE</h4>
-</div>
-  {% for local in locals %}
- <h3>{{ local.title }}</h3>
- <link rel="stylesheet" href="{% static 'styles.css' %}">
- <p>{{ local }}</p>
- <p><a href="">{{ local.more_info}}</a></a></p>
- <img src="/media//{{lockals.image}}">
- {% endfor %}
+  <div class="container">
+    <section class="page__content js-post-gallery cf">
+      <h3>
+        <strong>TRZY LOKALE DO WYBORU !</strong>
+      </h3>
+      
+    </section>
+  </div>
+
+
+<!-- </div> -->
+  <!-- {% for local in locals %} -->
+ <!-- <h3>{{ local.title }}</h3> -->
+ <!-- <link rel="stylesheet" href="{% static 'styles.css' %}"> -->
+ <!-- <p>{{ local }}</p> -->
+ <!-- <p><a href="">{{ local.more_info}}</a></a></p> -->
+ <img src="/media/{{lockals.image}}">
+ <!-- {% endfor %} -->
 {% endblock %}
  
 
