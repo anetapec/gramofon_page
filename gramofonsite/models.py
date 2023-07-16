@@ -7,6 +7,32 @@ class ShortDescribe(models.Model):
     # rooms =  models.Choices
     # def __str__(self):
         # return f"{self.title_page} \t {self.street}"
+
+    def __str__(self):
+        return self.title_page
+
+class Room(models.Model):
+    DANCE_ROOM = "Dance"
+    TOILET = "WC"
+    KITCHEN = "Cook"
+
+    ROOMS = [
+        (DANCE_ROOM, "Sala Taneczna"),
+        (TOILET, "Toaleta"),
+        (KITCHEN, "Kuchnia",)
+    ]
+    description = models.CharField(max_length=500, choices=ROOMS, default=DANCE_ROOM)
+
+    def __str__(self): 
+        return self.description
+
+
+
+#    name = models.CharField(max_length=20)
+#    photo = models.ImageField(upload_to="image", null=True, blank=True)
+#    discrabe = models.TextField(null=True, blank=True, default="")
+#    add = models.ManyToManyField(Local)
+       
 class Local(models.Model):
     title = models.CharField(max_length=20)
     number_of_levels = models.PositiveIntegerField(blank=True, null=True,  default=0)
@@ -16,7 +42,7 @@ class Local(models.Model):
     image = models.ImageField(upload_to="image", null=True, blank=True)
     title_page = models.CharField(max_length=20, null=True)
     street = models.CharField(max_length=20, null=True)
-    describe = models.OneToOneField(ShortDescribe, on_delete=models.CASCADE, null=True, blank=True)
+    note = models.ForeignKey(Room, on_delete=models.CASCADE, null=True, blank=True)
 
     # def __str__(self):
         
@@ -28,11 +54,11 @@ class Local(models.Model):
         return self.title
     
     
-# class Room(models.Model):
-    # name = models.CharField(max_length=20)
-    # photo = models.ImageField(upload_to="image", null=True, blank=True)
-    # discrabe = models.TextField(null=True, blank=True, default="")
-    # add = models.ManyToManyField(Local)
-        
+
+
+
+
+
+
 
 
