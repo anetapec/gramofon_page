@@ -11,20 +11,15 @@ class ShortDescribe(models.Model):
     def __str__(self):
         return self.title_page
 
-class Room(models.Model):
-    DANCE_ROOM = "Dance"
-    TOILET = "WC"
-    KITCHEN = "Cook"
 
-    ROOMS = [
-        (DANCE_ROOM, "Sala Taneczna"),
-        (TOILET, "Toaleta"),
-        (KITCHEN, "Kuchnia",)
-    ]
-    description = models.CharField(max_length=500, choices=ROOMS, default=DANCE_ROOM)
 
-    def __str__(self): 
-        return self.description
+
+
+
+
+
+
+
 
 
 
@@ -42,17 +37,37 @@ class Local(models.Model):
     image = models.ImageField(upload_to="image", null=True, blank=True)
     title_page = models.CharField(max_length=20, null=True)
     street = models.CharField(max_length=20, null=True)
-    note = models.ForeignKey(Room, on_delete=models.CASCADE, null=True, blank=True)
+    note = models.ForeignKey(ShortDescribe, on_delete=models.CASCADE, null=True, blank=True)
 
-    # def __str__(self):
+    def __str__(self):
         
-        # if self.number_of_levels is not None:
-            # return f" Lokal {self.number_of_levels} poziomowy o powierzchni {self.area} m2 do {self.nunber_of_people} osób." 
-        # return f"Lokal o powierzchni {self.area} m2 do {self.nunber_of_people} osób." 
+        if self.number_of_levels is not None:
+            return f" Lokal {self.number_of_levels} poziomowy o powierzchni {self.area} m2 do {self.nunber_of_people} osób." 
+        return f"Lokal o powierzchni {self.area} m2 do {self.nunber_of_people} osób." 
 
-    def __str_(self):
-        return self.title
+    # def __str_(self):
+        # return self.title
     
+
+class Room(models.Model):
+    DANCE_ROOM = "Dance"
+    TOILET = "WC"
+    KITCHEN = "Cook"
+
+    ROOMS = [
+        (DANCE_ROOM, "Sala Taneczna"),
+        (TOILET, "Toaleta"),
+        (KITCHEN, "Kuchnia",)
+    ]
+    description = models.CharField(max_length=500, choices=ROOMS, default=DANCE_ROOM)
+    image = models.ImageField(upload_to="image", null=True, blank=True)
+    note = models.ForeignKey(Local, on_delete=models.CASCADE, null=True, blank=True) 
+
+    def __str__(self): 
+        return self.description
+
+
+
     
 
 

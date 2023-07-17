@@ -18,14 +18,14 @@
   </div>
 
 
-<!-- </div> -->
-  <!-- {% for local in locals %} -->
- <!-- <h3>{{ local.title }}</h3> -->
- <!-- <link rel="stylesheet" href="{% static 'styles.css' %}"> -->
- <!-- <p>{{ local }}</p> -->
- <!-- <p><a href="">{{ local.more_info}}</a></a></p> -->
- <img src="/media/{{lockals.image}}">
- <!-- {% endfor %} -->
+</div>
+  {% for local in locals %}
+ <h3>{{ local.title }}</h3>
+ <link rel="stylesheet" href="{% static 'styles.css' %}">
+ <p>{{ local }}</p>
+ <p><a href="">{{ local.more_info}}</a></a></p>
+ <img src="/media/image{{lockal.image}}">
+ {% endfor %}
 {% endblock %}
  
 

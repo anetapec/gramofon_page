@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Local, Room, ShortDescribe
+from .models import Local, ShortDescribe, Room
 
 
 @admin.register(Local)
@@ -9,9 +9,8 @@ class TopicAdmin(admin.ModelAdmin):
 admin.site.register(Room)
 admin.site.register(ShortDescribe)
 
-class NoteRomm(admin.TabularInline):
-    model = Room
-    verbose_name_plural = "Room"
 
-class DepartmentAdmin(admin.ModelAdmin):
-    inlines= [NoteRomm]
+
+
+
+
