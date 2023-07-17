@@ -67,6 +67,8 @@ class Room(models.Model):
         return self.description
 
 
+# class Morska(models.Model):
+
 
     
 
