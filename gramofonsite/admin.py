@@ -1,14 +1,13 @@
 from django.contrib import admin
-from .models import Local, ShortDescribe, Room
+from .models import Local
 
 
 @admin.register(Local)
 class TopicAdmin(admin.ModelAdmin):
-    list_display = ['title' ]
+   list_display = ['title_local' ]
 
-admin.site.register(Room)
-admin.site.register(ShortDescribe)
-
+#admin.site.register(Local)
+# admin.site.register(ShortDescribe)
 
 
 
