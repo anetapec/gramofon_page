@@ -13,12 +13,14 @@ class Local(models.Model):
     image_base = models.ImageField(upload_to="image", null=True, blank=True)
     title_page = models.CharField(max_length=20, null=True)
     street = models.CharField(max_length=20, null=True)
-    dance_room_title = models.CharField(max_length=20, null=True)
-    note_dance_room = models.TextField(max_length=500, null=True)
+    dance_room_title = models.CharField(max_length=20, null=True, blank=True)
+    note_dance_room = models.TextField(max_length=800, null=True, blank=True)
     img_dance_room= models.ImageField(upload_to="image", null=True, blank=True)
-    note_toilet = models.TextField(max_length=500, null=True)
+    toilet_title = models.CharField(max_length=20, null=True, blank=True)
+    note_toilet = models.TextField(max_length=500, null=True, blank=True)
     img_toilet= models.ImageField(upload_to="image", null=True, blank=True)
-    note_kitchen = models.TextField(max_length=500, null=True)
+    kitchen_title = models.CharField(max_length=20, null=True, blank=True)
+    note_kitchen = models.TextField(max_length=500, null=True, blank=True)
     img_ktchen= models.ImageField(upload_to="image", null=True, blank=True)
     def __str__(self):
         
