@@ -1,18 +1,19 @@
 from django.db import models
 
        
-class Local(models.Model):
+class HeadPage(models.Model):
     logo_image = models.ImageField(upload_to="image", null=True, blank=True)
+    background_image = models.ImageField(upload_to="image", null=True, blank=True)
+
+class Local(models.Model):
+    
     title_local = models.CharField(max_length=20)
-    title_page = models.CharField(max_length=20, null=True)
-    street = models.CharField(max_length=20, null=True)
-    number_of_levels = models.PositiveIntegerField(blank=True, null=True,  default=0)
-    area = models.PositiveSmallIntegerField(default=200)
-    nunber_of_people = models.PositiveSmallIntegerField(default=60)
-    more_info = models.CharField(max_length=20, null=True)
+    local_note = models.CharField(max_length=100, null=True)
     image_base = models.ImageField(upload_to="image", null=True, blank=True)
+
     title_page = models.CharField(max_length=20, null=True)
     street = models.CharField(max_length=20, null=True)
+    short_note =  models.CharField(max_length=100, null=True)
     dance_room_title = models.CharField(max_length=20, null=True, blank=True)
     note_dance_room = models.TextField(max_length=800, null=True, blank=True)
     img_dance_room= models.ImageField(upload_to="image", null=True, blank=True)
@@ -22,13 +23,13 @@ class Local(models.Model):
     kitchen_title = models.CharField(max_length=20, null=True, blank=True)
     note_kitchen = models.TextField(max_length=500, null=True, blank=True)
     img_ktchen= models.ImageField(upload_to="image", null=True, blank=True)
-    def __str__(self):
+    # def __str__(self):
         
-        if self.number_of_levels is not None:
-            return f" Lokal {self.number_of_levels} poziomowy o powierzchni {self.area} m2 do {self.nunber_of_people} osób." 
-        return f"Lokal o powierzchni {self.area} m2 do {self.nunber_of_people} osób." 
+        # if self.number_of_levels is not None:
+            # return f" Lokal {self.number_of_levels} poziomowy o powierzchni {self.area} m2 do {self.nunber_of_people} osób." 
+        # return f"Lokal o powierzchni {self.area} m2 do {self.nunber_of_people} osób." 
 
-    # def __str_(self):
-        # return self.title
+    def __str_(self):
+        return self.title_local
     
 
