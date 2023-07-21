@@ -53,10 +53,14 @@
   <h2>Gramofon Morska</h2>
   <h1>Morska 122 A</h1>
   <p>Lokal o powierzchni 100 m2 .</p>
+  <h1>test</h1>
   {% endblock %}
 </div>
+<div></div>
   {% block morska_dance_room %}  
-  {% for local in locals %}
+  <h1>jajajaj</h1>
+  {% for morska_obj in locals %}
+  <p>Why</p>
   <h3>{{ local.title_local }}</h3>
   <h1>{{ morska_obj.note_dance_room }} </h1>
   <p>{{ morska_obj }}</p>
@@ -64,7 +68,7 @@
 <img src="/media/image/{{local.image_base}}">
   {% endfor %}
   {% endblock %}  
-
+</div>
 
 <div>
 
