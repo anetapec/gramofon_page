@@ -5,6 +5,7 @@ class HeadPage(models.Model):
     logo_image = models.ImageField(upload_to="image", null=True, blank=True)
     background_image = models.ImageField(upload_to="image", null=True, blank=True)
 
+
 class Local(models.Model):
     
     title_local = models.CharField(max_length=20)

@@ -6,7 +6,7 @@ def gramofonsite_list(request):
     return render(request, '/home/aneta/software/repos/gramofon/gramofonsite/templates/site/gramofon/gramofonsite_list.html', {'locals': locals})
 
 def morska(request):
-    #locals = Local.objects.all()  # inquiry to database
+    #morska_obj = Local.objects.get(id=2)  # inquiry to database
     return render(request, '/home/aneta/software/repos/gramofon/gramofonsite/templates/site/gramofon/morska.html')
 
   
