@@ -59,13 +59,13 @@
 <div></div>
   {% block morska_dance_room %}  
   <h1>jajajaj</h1>
-  {% for morska_obj in locals %}
+  {% for local in locals %}
   <p>Why</p>
-  <h3>{{ local.title_local }}</h3>
+  <h3>{{ morska_obj.title_local }}</h3>
   <h1>{{ morska_obj.note_dance_room }} </h1>
   <p>{{ morska_obj }}</p>
-<p><a href="">{{ local.more_info}}</a></a></p>
-<img src="/media/image/{{local.image_base}}">
+<p><a href="">{{ morska_obj.more_info}}</a></a></p>
+<img src="/media/image/{{morska_obj.image_base}}">
   {% endfor %}
   {% endblock %}  
 </div>
