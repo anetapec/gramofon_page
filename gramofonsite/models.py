@@ -24,6 +24,15 @@ class Local(models.Model):
     kitchen_title = models.CharField(max_length=20, null=True, blank=True)
     kitchen_note = models.TextField(max_length=500, null=True, blank=True)
     kitchen_img= models.ImageField(upload_to="image", null=True, blank=True)
+    banquet_hall_title = models.CharField(max_length=20, null=True, blank=True)
+    banquet_hall_note = models.TextField(max_length=800, null=True, blank=True)
+    banquet_hall_img =  models.ImageField(upload_to="image", null=True, blank=True)
+    equipment_title = models.CharField(max_length=20, null=True, blank=True)
+    equipment_note = models.TextField(max_length=500, null=True, blank=True)
+    equipment_img = models.ImageField(upload_to="image", null=True, blank=True)
+
+    
+
     # def __str__(self):
         
         # if self.number_of_levels is not None:
