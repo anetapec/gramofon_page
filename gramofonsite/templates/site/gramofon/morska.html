@@ -50,24 +50,44 @@
 </head>
 <div>
   {% block morska %}
-  <h2>Gramofon Morska</h2>
-  <h1>Morska 122 A</h1>
-  <p>Lokal o powierzchni 100 m2 .</p>
-  <h1>test</h1>
+  <h2>{{ morska_obj.title_page }}</h2>
+  <h1>{{ morska_obj.street }}</h1>
+  <p>{{ morska_obj.note_short }}</p>
   {% endblock %}
 </div>
-<div></div>
+<div>
+
+</div>
   {% block morska_dance_room %}  
-  <h1>jajajaj</h1>
-  {% for morska in locals %}
-  <p>Why</p>
-  <h3>{{ morska_obj.title_local }}</h3>
-  <p>{{ morska_obj.note_dance_room }} </p>
-  <p>{{ morska_obj }}</p>
-<p><a href="">{{ morska_obj.more_info}}</a></a></p>
-<img src="/media/image/{{morska_obj.image_base}}">
-  {% endfor %}
-  {% endblock %}  
+  <div>
+    <h2>{{ morska_obj.dance_room_title }}</h2>
+    <p>{{ morska_obj.dance_room_note }}</p>
+    <img src="/media/image/{{morska_obj.image_base}}">
+  </div>
+  {% endblock %} 
+
+ 
+
+  
+  
+
+  {% block morska_toilet %} 
+  <div>
+    <h2>{{ morska_obj.toilet_title }}</h2>
+    <p>{{ morska_obj.toilet_note }}</p>
+    <img src="/media/image/{{morska_obj.toilet_img}}">
+  </div>
+  {% endblock  %} 
+
+  {% block morska_kitchen %} 
+  <div>
+    <h2>{{ morska_obj.kitchen_title }}</h2>
+    <p>{{ morska_obj.kitchen_note }}</p>
+    <img src="/media/image/{{morska_obj.kitchen_img}}">
+  </div>
+  {% endblock  %} 
+
+  
 </div>
 
 <div>

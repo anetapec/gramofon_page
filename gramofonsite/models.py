@@ -2,28 +2,28 @@ from django.db import models
 
        
 class HeadPage(models.Model):
-    logo_image = models.ImageField(upload_to="image", null=True, blank=True)
-    background_image = models.ImageField(upload_to="image", null=True, blank=True)
+    image_logo = models.ImageField(upload_to="image", null=True, blank=True)
+    image_background = models.ImageField(upload_to="image", null=True, blank=True)
 
 
 class Local(models.Model):
     
     title_local = models.CharField(max_length=20)
-    local_note = models.CharField(max_length=100, null=True)
+    note_local= models.CharField(max_length=100, null=True)
     image_base = models.ImageField(upload_to="image", null=True, blank=True)
 
     title_page = models.CharField(max_length=20, null=True)
     street = models.CharField(max_length=20, null=True)
-    short_note =  models.CharField(max_length=100, null=True)
+    note_short =  models.CharField(max_length=100, null=True)
     dance_room_title = models.CharField(max_length=20, null=True, blank=True)
-    note_dance_room = models.TextField(max_length=800, null=True, blank=True)
-    img_dance_room= models.ImageField(upload_to="image", null=True, blank=True)
+    dance_room_note = models.TextField(max_length=800, null=True, blank=True)
+    dance_room_img= models.ImageField(upload_to="image", null=True, blank=True)
     toilet_title = models.CharField(max_length=20, null=True, blank=True)
-    note_toilet = models.TextField(max_length=500, null=True, blank=True)
-    img_toilet= models.ImageField(upload_to="image", null=True, blank=True)
+    toilet_note = models.TextField(max_length=500, null=True, blank=True)
+    toilet_img= models.ImageField(upload_to="image", null=True, blank=True)
     kitchen_title = models.CharField(max_length=20, null=True, blank=True)
-    note_kitchen = models.TextField(max_length=500, null=True, blank=True)
-    img_ktchen= models.ImageField(upload_to="image", null=True, blank=True)
+    kitchen_note = models.TextField(max_length=500, null=True, blank=True)
+    kitchen_img= models.ImageField(upload_to="image", null=True, blank=True)
     # def __str__(self):
         
         # if self.number_of_levels is not None:
