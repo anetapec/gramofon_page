@@ -5,5 +5,10 @@ h3,a {
 }
 
 body {
+    width: 100vw;
+    height: 50vh;
     background-image: url('gram.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+

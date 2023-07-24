@@ -2,9 +2,13 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  {% block sidebar %}
+  {% block base_img %}
+  {% endblock  %}
   
-  {% endblock sidebar %}
+<div>
+  <body>
+    <link rel="stylesheet" href="/static/styles.css">
+  </body>    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
@@ -12,7 +16,7 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#"><img src="/media/image/gramofon-logo_rgb.png" alt=""></a>
+          <a class="navbar-brand" href="#"><img src="/home/aneta/software/repos/gramofon/gramofon_page/gramofonsite/static/gramofon-logo_biale.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -47,8 +51,11 @@
       </head>
 
 
+    </div>
 
-      <body>
+   
+   
+      
               <!-- {% block content %} -->
               <!-- {% endblock %} -->
        

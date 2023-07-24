@@ -3,11 +3,16 @@
 {% block title %}Gramofon-Twoje miejsce na Urodziny i Imprezy w Gdyni{% endblock %}
 {% block content %}
 <!-- <div id="sidebar"> -->
+  {% block base_img %}
   <body>
     <link rel="stylesheet" href="/static/styles.css">
   </body>    
   <h1>GRAMOFON</h1>
   <h4>URODZINY I IMPREZY OKOLICZNOŚCIOWE</h4>
+  {% endblock %}  
+
+
+
       <h3>
         <strong>TRZY LOKALE DO WYBORU !</strong>
       </h3>
@@ -23,8 +28,8 @@
  <p><a href="gramofon-morska">Dowiedz się więcej ></a></a></p>
  <img src="/media/image/{{local.image_base}}">
  {% endfor %}
-{% endblock %}
- 
+ {% endblock %}  
+
 
 
 
