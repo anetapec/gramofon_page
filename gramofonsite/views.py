@@ -10,4 +10,7 @@ def morska(request):
     context = {'locals': locals, 'morska_obj': morska_obj }
     return render(request, '/home/aneta/software/repos/gramofon/gramofon_page/gramofonsite/templates/site/gramofon/morska.html', context)
 
+def bootstrap(request):
+    return render(request, '/home/aneta/software/repos/gramofon/gramofon_page/gramofonsite/templates/site/gramofon/bootstrap.html')
+
   
