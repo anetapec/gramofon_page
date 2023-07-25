@@ -1,7 +1,7 @@
 body {
     width: 100vw;
     height: 50vh;
-    background-image: url('gram.jpg');
+    background-image: url('base.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
