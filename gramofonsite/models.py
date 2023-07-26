@@ -8,7 +8,7 @@ class HeadPage(models.Model):
 
 class Local(models.Model):
     
-    title_local = models.CharField(max_length=20)
+    title_local = models.CharField(max_length=20, verbose_name="Nazwa lokalu")
     note_local= models.CharField(max_length=100, null=True)
     image_base = models.ImageField(upload_to="image", null=True, blank=True)
 
