@@ -22,3 +22,9 @@ body {
 #navbar ul a {
     font-size: 1.0rem;
 }
+
+#navbar-nav li:hover>.dropdown-menu{
+    display: block;
+    
+}
+
