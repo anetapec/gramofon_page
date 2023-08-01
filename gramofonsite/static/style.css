@@ -14,6 +14,18 @@ body{
 nav{
     text-transform: uppercase;
 }
-.nav-link:focus, .nav-link:hover{
+.nav-link:focus, .nav-link:hover, .navbar-nav .nav-link.show{
     color: #b59a01;
 }
+/* ustawienie przycisku hamburgera na telefonach */
+
+.navbar-toggler{
+    padding: 10px 15px;
+    border: 1px solid #b59a01;;
+}
+
+/* tu zrobić by podkresliło aktywny element a nie na żółto */
+/* .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{ */
+    /* color: #b59a01;    */
+/* } */
+
