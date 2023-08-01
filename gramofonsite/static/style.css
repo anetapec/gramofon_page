@@ -5,6 +5,12 @@
 }
 
 body{
-    background-color: #333;
+    background-color: #c60e0e;
     font-family: 'Sahitya',
+}
+.nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show { 
+    color: #fff;
+}
+nav{
+    text-transform: uppercase;
 }
