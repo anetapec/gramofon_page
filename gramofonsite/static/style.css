@@ -13,6 +13,7 @@ body {
 }
 nav {
     text-transform: uppercase;
+    z-index: 5;
 }
 .nav-link:focus, .nav-link:hover, .navbar-nav .nav-link.show{
     color: #b59a01;
