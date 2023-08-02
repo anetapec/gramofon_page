@@ -44,3 +44,10 @@ Starting project in current directory reduces redundant top folder
 ```bash
 django-admin.exe startproject gramofon .
 ```
+
+
+Django DEBUG toolbar
+https://django-debug-toolbar.readthedocs.io/en/latest/installation.html
+```bash
+python -m pip install django-debug-toolbar
+```
