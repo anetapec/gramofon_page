@@ -18,6 +18,10 @@ nav {
 .nav-link:focus, .nav-link:hover, .navbar-nav .nav-link.show{
     color: #b59a01;
 }
+
+.shadow-bg {
+    background-color: rgba(0, 0, 0,.8);
+}
 /* ustawienie przycisku hamburgera na telefonach */
 
 .navbar-toggler {
@@ -56,3 +60,16 @@ header.hero-img {
     height: 100%;
     flex-direction: column;
 }
+
+.fa-solid.fa-chevron-down {
+    position: absolute;
+    bottom: 50px;
+    font-size: 30px;
+    left: 50%;
+}
+
+@media (min-width: 768px) {
+    .hero-text.p {
+    font-size: 30px;
+    }
+    }
