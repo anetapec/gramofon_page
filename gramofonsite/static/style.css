@@ -5,7 +5,6 @@
 }
 
 body {
-    background-color: #c60e0e;
     font-family: 'Sahitya',
 }
 .nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .fa-bars { 
@@ -20,13 +19,13 @@ nav {
 }
 
 .shadow-bg {
-    background-color: rgba(0, 0, 0,.8);
+    background-color: rgba(192, 113, 24, 0.8);
 }
 /* ustawienie przycisku hamburgera na telefonach */
 
 .navbar-toggler {
     padding: 10px 15px;
-    border: 1px solid #b59a01;;
+    border: 1px solid #fff;;
 }
 
 /* tu zrobić by podkresliło aktywny element a nie na żółto */
@@ -42,7 +41,7 @@ header.hero-img {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #b59a01;
+    color: #fff;
     z-index: 0;
 }
 .hero-shadow {
