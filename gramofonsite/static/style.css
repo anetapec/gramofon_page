@@ -1,17 +1,17 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: #c60e0e;
     font-family: 'Sahitya',
 }
 .nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .fa-bars { 
     color: #fff;
 }
-nav{
+nav {
     text-transform: uppercase;
 }
 .nav-link:focus, .nav-link:hover, .navbar-nav .nav-link.show{
@@ -19,7 +19,7 @@ nav{
 }
 /* ustawienie przycisku hamburgera na telefonach */
 
-.navbar-toggler{
+.navbar-toggler {
     padding: 10px 15px;
     border: 1px solid #b59a01;;
 }
@@ -28,4 +28,30 @@ nav{
 /* .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{ */
     /* color: #b59a01;    */
 /* } */
-
+/*  */
+/* sprawdzić bacground attachment */
+header.hero-img {
+    position: relative;
+    height: 100vh;
+    background-image: url("base.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #b59a01;
+    z-index: 0;
+}
+.hero-shadow {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    z-index: -5;
+}
+.hero-text {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
