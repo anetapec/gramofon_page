@@ -1,10 +1,9 @@
 {% extends "site/base.html" %} 
-{% load static %} 
-<!-- <!DOCTYPE html> -->
-<!-- <html lang="pl"> -->
+{% block navigation %}
+{% endblock %}
 <head>
-    <!-- <meta charset="UTF-8"> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+   
+   
     <title>Gramofon Morska-Gramofon w Gdyni</title>
     
 
@@ -23,7 +22,7 @@
   <div>
     <h2>{{ morska_obj.dance_room_title }}</h2>
     <p>{{ morska_obj.dance_room_note }}</p>
-    <img src="/media/image/{{morska_obj.image_base}}">
+    <img src="/media/image/{{morska_obj.dance_room_img}}">
   </div>
   {% endblock %} 
 

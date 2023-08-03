@@ -12,6 +12,7 @@
     <script src="https://kit.fontawesome.com/7c58052471.js" crossorigin="anonymous"></script>
     </head>
   <body>
+{% block navigation %}
     <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3">
         <div class="container">
           <a class="navbar-brand" href="/gramofon-lokal"><img src="/static/gramofon-logo_biale.png" height="43,63" width="200" alt="Gramofon w Gdyni"></a>
@@ -21,7 +22,7 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
               <a class="nav-link active"></a>
-              <a class="nav-link" href="#home">Strona główna</a>
+              <a class="nav-link" href="gramofon-lokal">Strona główna</a>
               <a class="nav-link" href="gramofon-morska/">Morska</a>
               <a class="nav-link" href="#">Grabówek</a>
               <a class="nav-link" href="#">Chylonia</a>
@@ -33,6 +34,7 @@
           </div>
         </div>
       </nav>
+{% endblock %}
 
       <header class="hero-img" id="home">
         <div class="hero-text">
@@ -40,7 +42,7 @@
           <p>URODZINY I IMPREZY OKOLICZNOŚCIOWE</p>
         </div>
          <div class="hero-shadow"></div>
-         <a href="#home"></a><i class="fa-solid fa-chevron-down" style="color: #2e3436;"></i></a>
+         <a href="gramofon-lokal"></a><i class="fa-solid fa-chevron-down" style="color: #2e3436;"></i></a>
       </header>
 
 
