@@ -13,4 +13,7 @@ def morska(request):
 def bootstrap(request):
     return render(request, '/home/aneta/software/repos/gramofon/gramofon_page/gramofonsite/templates/site/gramofon/bootstrap.html')
 
+def navigation(request):
+    return render(request, '/home/aneta/software/repos/gramofon/gramofon_page/gramofonsite/templates/site/gramofon/navblock.html')
+
   

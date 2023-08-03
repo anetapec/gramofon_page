@@ -10,6 +10,7 @@ urlpatterns = [
     path('gramofon-lokal', views.gramofonsite_list, name='gramofonsite_list'), 
     path('gramofon-morska/', views.morska, name='morska'),
     path('bootstrap/', views.bootstrap, name='bootstrap'),
+    path('navigation/', views.navigation, name='navigation' )
     #path('imprezy/', views.bootstrap, name='imprezy'),
 
 
