@@ -1,3 +1,14 @@
+.gramofon-morska {
+    position: relative;
+    z-index: 0;
+    background-image: url(mor_1.jpg);
+    background-size: cover;
+    height: 400px; 
+
+}
+h2, p {
+   color: #363535; 
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,11 +19,12 @@ html {
     scroll-behavior: smooth;
 }
 
+
 body {
     font-family: 'Cabin', sans-serif;
 }
 .nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .fa-bars { 
-    color: #fff;
+    color: #605e5e;
 }
 nav {
     text-transform: uppercase;
@@ -53,7 +65,7 @@ header.hero-img {
     top: 0; 
     left: 0;
     width: 100%; 
-    height: 100%;
+    height: 40%;
     z-index: -5;
 }
 .hero-text {
