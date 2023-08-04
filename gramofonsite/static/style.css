@@ -12,7 +12,18 @@ body {
     font-family: 'Source Sans Pro';
     font-weight: 200;
 }
-.nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .fa-bars { 
+
+.strong {
+    font-weight: 600;
+}
+
+.aboutus-local-title {
+    font-size: 50px;
+    font-family:  'Sahitya';
+    font-weight: 700;
+}
+
+.nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .fa-bars, .aboutus-local-title  { 
     color: #ffffff;
 }
 nav {

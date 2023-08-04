@@ -48,6 +48,15 @@
 
       <main>
 
+        <div class="row gx-5 ms-auto">
+          <div class="col">
+             1 z 2
+          </div>
+          <div class="col">
+             2 z 2
+          </div>
+       </div>
+
         <section id="home" class="home bg-light py-5">
 
           <div class="container"> 
@@ -71,8 +80,8 @@
                           <strong>TRZY LOKALE DO WYBORU !</strong>
                         </h4>
                         {% for local in locals %}
-                        <h3 class="aboutus-local-title">{{ local.title_local }}</h3>
-                        <p class="aboutus-local-note">{{ local.note_local }}</p>
+                        <h2 class="aboutus-local-title py-5">{{ local.title_local }}</h2>
+                        <p class="aboutus-local-note py-5">{{ local.note_local }}</p>
 
                       </div>
 
