@@ -16,4 +16,7 @@ def bootstrap(request):
 def navigation(request):
     return render(request, '/home/aneta/software/repos/gramofon/gramofon_page/gramofonsite/templates/site/gramofon/navblock.html')
 
-  
+def grabowek(request):
+    grabowek_obj = Local.objects.get(id=1)  # inquiry to database
+    context = {'locals': locals, 'grabowek_obj': grabowek_obj}
+    return render(request, '/home/aneta/software/repos/gramofon/gramofon_page/gramofonsite/templates/site/gramofon/grabowek.html', context) 
