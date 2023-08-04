@@ -12,7 +12,7 @@ urlpatterns = [
     path('bootstrap/', views.bootstrap, name='bootstrap'),
     path('navigation/', views.navigation, name='navigation'),
     path('grabowek/', views.grabowek, name='grabowek'),
-    path('chylonia', views.chylonia, name='chylonia')
+    path('chylonia/', views.chylonia, name='chylonia')
     
     #path('imprezy/', views.bootstrap, name='imprezy'),
 
