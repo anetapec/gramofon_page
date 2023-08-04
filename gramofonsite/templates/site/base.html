@@ -26,7 +26,7 @@
               <a class="nav-link" href="gramofon-morska/">Morska</a>
               <a class="nav-link" href="#">Grabówek</a>
               <a class="nav-link" href="#">Chylonia</a>
-              <a class="nav-link" href="#">Wypożyczenie porcelany</a>
+              <a class="nav-link" href="#">Imprezy cateringowe</a>
               <a class="nav-link" href="#">Kalendarz</a>
               <a class="nav-link" href="#">Kontakt</a>   
               <a class="nav-link" href="#">Regulamin</a> 
@@ -41,7 +41,7 @@
           <p>URODZINY I IMPREZY OKOLICZNOŚCIOWE</p>
         </div>
          <div class="hero-shadow"></div>
-         <a href="#home"></a><i class="fa-solid fa-chevron-down" style="color: #2e3436;"></i></a>
+         <a href="./gramofon/morska.html"></a><i class="fa-solid fa-chevron-down"></i></a>
       </header>
 
 
@@ -51,7 +51,6 @@
         <section id="home" class="home bg-light py-5">
 
           <div class="container"> 
-            <h1 class="section-title">TRZY LOKALE DO WYBORU !</h1>
               <!-- <strong>TRZY LOKALE DO WYBORU !</strong> -->
 
 
@@ -66,13 +65,25 @@
                 <!-- </div> -->
               <!-- </div> -->
 <!--                -->
-{% for local in locals %}
-<h3>{{ local.title_local }}</h3>
-<p>{{ local.note_local }}</p>
-<p><a href="gramofon-morska">Dowiedz się więcej ></a></a></p>
-<img class="img-fluid" src="/media/image/{{local.image_base}}">
-{% endfor %}
-            
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                        <h4 class="aboutus-card-title">
+                          <strong>TRZY LOKALE DO WYBORU !</strong>
+                        </h4>
+                        {% for local in locals %}
+                        <h3 class="aboutus-local-title">{{ local.title_local }}</h3>
+                        <p class="aboutus-local-note">{{ local.note_local }}</p>
+
+                      </div>
+
+                  </div>
+
+<!-- <h3></h3> -->
+<!-- <p>{{ local.note_local }}</p> -->
+<!-- <p><a href="gramofon-morska">Dowiedz się więcej ></a></a></p> -->
+<!-- <img class="img-fluid" src="/media/image/{{local.image_base}}"> -->
+<!-- {% endfor %} -->
+<!--              -->
               
 
 

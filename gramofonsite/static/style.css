@@ -9,16 +9,17 @@ html {
 }
 
 body {
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Source Sans Pro';
+    font-weight: 200;
 }
 .nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .fa-bars { 
-    color: #fff;
+    color: #ffffff;
 }
 nav {
     text-transform: uppercase;
     z-index: 5;
 }
-.nav-link:focus, .nav-link:hover, .navbar-nav .nav-link.show{
+.nav-link:focus, .nav-link:hover, .navbar-nav .nav-link.show, .a {
     color: #b59a01;
 }
 
@@ -29,7 +30,12 @@ nav {
 
 .navbar-toggler {
     padding: 10px 15px;
-    border: 1px solid #fff;;
+    border: 1px solid #ffffff;
+}
+
+.navbar-bar {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 /* tu zrobić by podkresliło aktywny element a nie na żółto */
@@ -45,7 +51,7 @@ header.hero-img {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #fff;
+    color: #ffffff;
     z-index: 0;
 }
 .hero-shadow {
@@ -69,6 +75,11 @@ header.hero-img {
     bottom: 50px;
     font-size: 30px;
     left: 50%;
+    z-index: 100%;
+    display: block;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
