@@ -11,7 +11,8 @@ urlpatterns = [
     path('gramofon-morska/', views.morska, name='morska'),
     path('bootstrap/', views.bootstrap, name='bootstrap'),
     path('navigation/', views.navigation, name='navigation'),
-    path('grabowek/', views.grabowek, name='grabowek')
+    path('grabowek/', views.grabowek, name='grabowek'),
+    path('chylonia', views.chylonia, name='chylonia')
     
     #path('imprezy/', views.bootstrap, name='imprezy'),
 
