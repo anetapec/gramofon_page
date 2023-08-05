@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Local
+from .calendar_API import test_calendar
 
 def gramofonsite_list(request):
     locals = Local.objects.all()  # inquiry to database
@@ -25,3 +26,8 @@ def chylonia(request):
     chylonia_obj = Local.objects.get(id=3)  # inquiry to database
     context = {'locals': locals, 'chylonia_obj': chylonia_obj}
     return render(request, '/home/aneta/software/repos/gramofon/gramofon_page/gramofonsite/templates/site/gramofon/chylonia.html', context) 
+
+def demo(request):
+    results = test_calendar()
+    context = {"results": results}
+    return render(request, 'demo.html', context)
