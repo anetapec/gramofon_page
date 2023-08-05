@@ -47,6 +47,11 @@
 
 
       <main>
+        <section id="home" class="home bg-light py-5">
+          <div class="container"> 
+            <h4 class="aboutus-card-title">
+              <strong>TRZY LOKALE DO WYBORU !</strong>
+            </h4>
 
         <div class="row gx-5 ms-auto">
           <div class="col">
@@ -56,61 +61,16 @@
             <p><a href="gramofon-morska">Dowiedz się więcej ></a></a></p>
             {% endfor %}
           </div>
-          <div class="col">
+          <div class="col gy-5">
             {% for local in locals %}
             <img class="img-fluid" src="/media/image/{{local.image_base}}">
             {% endfor %} 
 
           </div>
-       </div>
-
-        <section id="home" class="home bg-light py-5">
-
-          <div class="container"> 
-              <!-- <strong>TRZY LOKALE DO WYBORU !</strong> -->
+        </div>
+      </div>
 
 
-
-
-              <!-- <div class="container text-center"> -->
-                <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4"> -->
-                  <!-- <div class="col">Column</div> -->
-                  <!-- <div class="col">Column</div> -->
-<!--                    -->
-<!--                    -->
-                <!-- </div> -->
-              <!-- </div> -->
-<!--                -->
-                  <div class="row">
-                      <div class="col-sm-6 col-md-4">
-                        <h4 class="aboutus-card-title">
-                          <strong>TRZY LOKALE DO WYBORU !</strong>
-                        </h4>
-                        {% for local in locals %}
-                        <h2 class="aboutus-local-title py-5">{{ local.title_local }}</h2>
-                        <p class="aboutus-local-note py-5">{{ local.note_local }}</p>
-
-                      </div>
-
-                  </div>
-
-<!-- <h3></h3> -->
-<!-- <p>{{ local.note_local }}</p> -->
-<!-- <p><a href="gramofon-morska">Dowiedz się więcej ></a></a></p> -->
-<!-- <img class="img-fluid" src="/media/image/{{local.image_base}}"> -->
-<!-- {% endfor %} -->
-<!--              -->
-              
-
-
-
-              </div>
-
-              
-
-
-
-          </div>
 
         </section>
 

@@ -34,33 +34,41 @@
         </div>
       </nav>
 
-      <section id="gramofon-morska" class="gramofon-morska">
-        <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center">
-          <h2>{{ morska_obj.title_page }}</h2>
-          <h5>{{ morska_obj.street }}</h5>
-          <p>{{ morska_obj.note_short }}</p>
-          <div class="hero-shadow"></div>
+
+      <main>
+        <section id="gramofon-morska-hero" class="gramofon-morska">
+          <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center">
+            <h2>{{ morska_obj.title_page }}</h2>
+            <h5>{{ morska_obj.street }}</h5>
+            <p>{{ morska_obj.note_short }}</p>
+            <div class="hero-shadow"></div>
+          </div>
+
+        <section id="morska" class="morska bg-light py-5">
+          <div class="container"> 
+        <div class="row gx-5 ms-auto">
+          <div class="col">
+            <h2 class="title py-5">{{ morska_obj.dance_room_title }}</h2>
+            <p class="note py-5">{{ morska_obj.dance_room_note }}</p>
+          </div>
+
+          <div class="col gy-5">
+            <img class="img-fluid" src="/media/image/{{morska_obj.image_base}}">
+          </div>
+
+          <div class="col">
+            <h2 class="title py-5">{{ morska_obj.toilet_title}}</h2>
+            <p class="note py-5">{{ morska_obj.toilet_note }}</p>
+          </div>
+          <div class="col gy-5">
+            <img class="img-fluid" src="/media/image/{{morska_obj.toilet_img}}">
+          </div>
         </div>
+      </div>
+        </section>
+      </main>
 
 
-
-      </section>
-      <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-              <div>
-                <h2>{{ morska_obj.dance_room_title }}</h2>
-                <p>{{ morska_obj.dance_room_note }}</p>
-            </div>
-                <div>
-                <img class="img-fluid" src="/media/image/{{morska_obj.image_base}}">
-  
-            </div>
-            <div>
-              <h2>{{ morska_obj.toilet_title }}</h2>
-              <p>{{ morska_obj.toilet_note }}</p>
-              <img class="img-fluid" src="/media/image/{{morska_obj.toilet_img}}">
-            </div>
 
             <div>
               <h2>{{ morska_obj.kitchen_title }}</h2>

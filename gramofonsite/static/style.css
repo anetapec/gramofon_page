@@ -23,14 +23,14 @@ body {
     font-weight: 700;
 }
 
-.nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .fa-bars, .aboutus-local-title  { 
+.nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .fa-bars { 
     color: #ffffff;
 }
 nav {
     text-transform: uppercase;
     z-index: 5;
 }
-.nav-link:focus, .nav-link:hover, .navbar-nav .nav-link.show, .a {
+.nav-link:focus, .nav-link:hover, .navbar-nav .nav-link.show, .a, .aboutus-local-title  {
     color: #b59a01;
 }
 
