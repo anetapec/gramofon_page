@@ -2,12 +2,34 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Django",
+            "name": "Python: Django RUNSERVER",
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}\\manage.py",
             "args": [
                 "runserver"
+            ],
+            "django": true,
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Django MAKE MIGRATIONS",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}\\manage.py",
+            "args": [
+                "makemigrations"
+            ],
+            "django": true,
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Django MIGRATE",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}\\manage.py",
+            "args": [
+                "migrate"
             ],
             "django": true,
             "justMyCode": true
@@ -19,6 +41,7 @@
             "program": "automation/update.py",
             "console": "integratedTerminal",
             "justMyCode": true
-        }
+        },
+
     ]
 }
