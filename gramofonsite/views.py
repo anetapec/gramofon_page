@@ -30,4 +30,7 @@ def chylonia(request):
 def demo(request):
     results = test_calendar()
     context = {"results": results}
-    return render(request, 'demo.html', context)
+    return render(request, '/home/aneta/software/repos/gramofon/gramofon_page/gramofonsite/templates/site/gramofon/demo.html', context)
+
+def timetable(request):
+    return render(request, '/home/aneta/software/repos/gramofon/gramofon_page/gramofonsite/templates/site/gramofon/home.html')
