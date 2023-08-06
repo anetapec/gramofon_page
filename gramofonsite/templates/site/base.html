@@ -52,23 +52,53 @@
             <h4 class="aboutus-card-title">
               <strong>TRZY LOKALE DO WYBORU !</strong>
             </h4>
-
+      <section class="article__content">
         <div class="row gx-5 ms-auto">
           <div class="col">
-            {% for local in locals %}
-            <h2 class="aboutus-local-title py-5">{{ local.title_local }}</h2>
-            <p class="aboutus-local-note py-5">{{ local.note_local }}</p>
-            <p><a href="gramofon-morska">Dowiedz się więcej ></a></a></p>
-            {% endfor %}
+            <h2 class="aboutus-local-title py-5"> Grabówek</h2>
+
+          <div class="separator--flower">*</div>
+
+            <p class="aboutus-local-note py-5">Lokal 2 poziomowy o powierzchni 130 metrów <sup>2</sup> do 40 osób.</p>
+            <p class="more-info"><a href="gramofon-morska">Dowiedz się więcej ></a></p>
           </div>
           <div class="col gy-5">
-            {% for local in locals %}
-            <img class="img-fluid" src="/media/image/{{local.image_base}}">
-            {% endfor %} 
+            <img class="img-fluid" src="../../static/gra_g.jpg">
 
           </div>
         </div>
       </div>
+
+      <div class="row gx-5 ms-auto">
+        <div class="col">
+          <h2 class="aboutus-local-title py-5"> Morska</h2>
+            
+        
+        <div class="separator--flower">*</div>
+          <p class="aboutus-local-note py-5">Lokal o powierzchni 100 m <sup>2</sup> do 40 osób.</p>
+          <p class="more-info"><a href="gramofon-morska">Dowiedz się więcej ></a></p>
+        </div>
+        <div class="col gy-5">
+          <img class="img-fluid" src="../../static/mor_1.jpg">
+        </div>
+      </div>
+    </div>
+
+      <div class="row gx-5 ms-auto">
+        <div class="col">
+          <h2 class="aboutus-local-title py-5"> Chylonia</h2>
+
+            <div class="separator--flower">*</div>
+          <p class="aboutus-local-note py-5">Lokal o powierzchni 90 metrów <sup>2</sup> do 40 osób.</p>
+          <p class="more-info"><a href="gramofon-morska">Dowiedz się więcej ></a></p>
+        </div>
+        <div class="col gy-5">
+          <img class="img-fluid" src="../../static/chy_g.jpg">
+        </div>
+      </div>
+    </div>
+
+
 
 
 
@@ -114,7 +144,10 @@
       </div>
       </section>
 
-
+      <hr class="dashed">
+      <hr class="dotted">
+      <hr class="solid">
+      <hr class="rounded"> 
 
 
       </main>

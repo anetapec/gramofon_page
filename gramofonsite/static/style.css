@@ -5,6 +5,29 @@
     font-family: 'Cabin', sans-serif;
 }
 
+ /* Dashed border */
+ hr.dashed {
+    border-top: 3px dashed #bbb;
+  }
+  
+  /* Dotted border */
+  hr.dotted {
+    border-top: 3px dotted #bbb;
+  }
+  
+  /* Solid border */
+  hr.solid {
+    border-top: 3px solid #bbb;
+  }
+  
+  /* Rounded border */
+  hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+  } 
+
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -26,6 +49,20 @@ body {
     font-size: 50px;
     font-family:  'Sahitya';
     font-weight: 700;
+    text-align: center;
+}
+
+
+.aboutus-local-title.first-letter {
+    font-size: 1.22em;
+    padding-left: 72px;
+    margin: 0 -72px;
+    letter-spacing: 72px;
+
+    
+}
+.article__content.a{
+    color: #b59a01;
 }
 
 .nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .fa-bars { 
