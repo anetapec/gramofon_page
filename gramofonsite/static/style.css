@@ -48,7 +48,14 @@ nav {
     font-variant-numeric: normal;
     font-weight: 400;
     line-height: 30.6px;
+    vertical-align: middle;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-size-adjust: 100%;
 }
+
+
+
 .nav-link:focus, .nav-link:hover, .navbar-nav .nav-link.show, .a, .aboutus-local-title  {
     color: #b59a01;
 }
@@ -68,6 +75,13 @@ nav {
     vertical-align: middle;
 }
 
+.navbar-brand {
+    max-height: 64px;
+    max-width: 100%;
+}
+
+
+
 /* tu zrobić by podkresliło aktywny element a nie na żółto */
 /* .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{ */
     /* color: #b59a01;    */
@@ -83,6 +97,9 @@ header.hero-img {
     background-attachment: fixed;
     color: #ffffff;
     z-index: 0;
+    
+    
+    
 }
 .hero-shadow {
     position: absolute;
@@ -98,6 +115,8 @@ header.hero-img {
     align-items: center;
     height: 100%;
     flex-direction: column;
+    font-size: 18px;
+    letter-spacing: 3.901px;
 }
 
 .fa-solid.fa-chevron-down {
