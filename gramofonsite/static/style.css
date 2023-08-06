@@ -2,6 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: rgb(81, 81, 80);
+    display: inline-block;
+    font-family: 'Cabin'sans-serif;
 }
 
 html {
@@ -9,7 +12,6 @@ html {
 }
 
 body {
-    font-family: 'Source Sans Pro';
     font-weight: 200;
 }
 
@@ -23,8 +25,13 @@ body {
 
 .aboutus-local-title {
     font-size: 50px;
-    font-family:  'Sahitya';
     font-weight: 700;
+}
+.nav-link {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
 }
 
 .nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .fa-bars { 
@@ -33,9 +40,12 @@ body {
 nav {
     text-transform: uppercase;
     z-index: 5;
+    text-align: center;
+    margin: 0 25px;
+
 }
 .nav-link:focus, .nav-link:hover, .navbar-nav .nav-link.show, .a, .aboutus-local-title  {
-    color: #b59a01;
+    color: rgb(181, 154, 1);
 }
 
 .shadow-bg {
