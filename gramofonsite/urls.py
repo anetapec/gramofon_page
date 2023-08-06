@@ -7,8 +7,16 @@ from django.conf.urls.static import static
 
 app_name = 'gramofonsite'
 urlpatterns = [
-    path('', views.gramofonsite_list, name='gramofonsite_list'), 
-    path('gramofon-morska', views.morska, name='gramofon-morska'),
+    path('gramofon-lokal', views.gramofonsite_list, name='gramofonsite_list'), 
+    path('gramofon-morska/', views.morska, name='morska'),
+    path('bootstrap/', views.bootstrap, name='bootstrap'),
+    path('navigation/', views.navigation, name='navigation'),
+    path('grabowek/', views.grabowek, name='grabowek'),
+    path('chylonia/', views.chylonia, name='chylonia'),
+    path('demo/', views.demo, name='demo'),
+    path('home/', views.timetable, name='home')
+    
+    #path('imprezy/', views.bootstrap, name='imprezy'),
 
 
 
