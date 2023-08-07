@@ -9,17 +9,11 @@ app_name = 'gramofonsite'
 urlpatterns = [
     path('gramofon-lokal', views.gramofonsite_list, name='gramofonsite_list'), 
     path('gramofon-morska/', views.morska, name='morska'),
-    path('bootstrap/', views.bootstrap, name='bootstrap'),
-    path('navigation/', views.navigation, name='navigation'),
-    path('gramofon-grabowek/', views.grabowek, name='gramofon-grabowek'),
-    path('gramofon-chylonia/', views.chylonia, name='gramofon-chylonia'),
+    path('gramofon-grabowek/', views.grabowek, name='grabowek'),
+    path('gramofon-chylonia/', views.chylonia, name='chylonia'),
     path('regulamin/', views.status, name='regulamin'),
     path('contact/', views.contact, name='contact'),
     
-    #path('imprezy/', views.bootstrap, name='imprezy'),
-
-
-
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

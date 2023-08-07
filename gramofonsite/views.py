@@ -10,12 +10,6 @@ def morska(request):
     context = {'locals': locals, 'morska_obj': morska_obj }
     return render(request, '/home/aneta/software/repos/gramofon/gramofon_page/gramofonsite/templates/site/gramofon/morska.html', context)
 
-def bootstrap(request):
-    return render(request, '/home/aneta/software/repos/gramofon/gramofon_page/gramofonsite/templates/site/gramofon/bootstrap.html')
-
-def navigation(request):
-    return render(request, '/home/aneta/software/repos/gramofon/gramofon_page/gramofonsite/templates/site/gramofon/navblock.html')
-
 def grabowek(request):
     grabowek_obj = Local.objects.get(id=1)  # inquiry to database
     context = {'locals': locals, 'grabowek_obj': grabowek_obj}
