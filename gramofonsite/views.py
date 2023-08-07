@@ -25,3 +25,11 @@ def chylonia(request):
     chylonia_obj = Local.objects.get(id=3)  # inquiry to database
     context = {'locals': locals, 'chylonia_obj': chylonia_obj}
     return render(request, '/home/aneta/software/repos/gramofon/gramofon_page/gramofonsite/templates/site/gramofon/chylonia.html', context) 
+
+def contact(request):
+    return render(request, 'gramofonsite/templates/site/gramofon/contact.html')
+
+
+def status(request):
+    return render(request, '/home/aneta/software/repos/gramofon/gramofon_page/gramofonsite/templates/site/gramofon/status.html')
+

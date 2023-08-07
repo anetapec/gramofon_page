@@ -11,8 +11,10 @@ urlpatterns = [
     path('gramofon-morska/', views.morska, name='morska'),
     path('bootstrap/', views.bootstrap, name='bootstrap'),
     path('navigation/', views.navigation, name='navigation'),
-    path('grabowek/', views.grabowek, name='grabowek'),
-    path('chylonia/', views.chylonia, name='chylonia')
+    path('gramofon-grabowek/', views.grabowek, name='gramofon-grabowek'),
+    path('gramofon-chylonia/', views.chylonia, name='gramofon-chylonia'),
+    path('regulamin/', views.status, name='regulamin'),
+    path('contact/', views.contact, name='contact'),
     
     #path('imprezy/', views.bootstrap, name='imprezy'),
 
