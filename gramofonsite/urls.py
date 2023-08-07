@@ -11,8 +11,9 @@ urlpatterns = [
     path('gramofon-morska/', views.morska, name='morska'),
     path('gramofon-grabowek/', views.grabowek, name='grabowek'),
     path('gramofon-chylonia/', views.chylonia, name='chylonia'),
-    path('regulamin/', views.status, name='regulamin'),
+    path('regulamin/', views.statute, name='regulamin'),
     path('contact/', views.contact, name='contact'),
+    
     
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
