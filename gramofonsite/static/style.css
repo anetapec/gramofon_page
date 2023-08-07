@@ -39,7 +39,7 @@ body {
 
     
 }
-.article__content.a{
+.article__content.a, .a {
     color: #b59a01;
 }
 
@@ -233,4 +233,18 @@ header.hero-img {
     color: #c59d5f;
   }
   
-  
+  .article--page.border-waves:before {
+    top: -7px;
+    background-position: top;
+    z-index: 20;
+  } 
+
+  /* by brzeg był falowany  */
+  .article--page.border-waves:before, .article--page.border-waves:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 14px;
+    position: absolute;
+    left: 0;
+  }
