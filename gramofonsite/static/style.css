@@ -248,3 +248,12 @@ header.hero-img {
     position: absolute;
     left: 0;
   }
+
+  /*  */
+  /* .article__content a:not([class]) { */
+    /* border-color: #b59a01; */
+    /* padding-bottom: 2px; */
+    /* border-bottom: 2px solid #c59d5f; */
+    /* font: 18px 'Cabin'; */
+    /* padding: 30px 30px 30px 78px; */
+  /* } */
