@@ -24,6 +24,7 @@ h2, p {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Cabin', sans-serif;
 }
 
 html {
@@ -37,9 +38,32 @@ body {
 .nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .fa-bars { 
     color: #605e5e;
 }
+
+.nav-link {
+    color: #262526;
+    font-size: 13px;
+    font: 'Cabin';
+    letter-spacing: 1px;
+}
 nav {
     text-transform: uppercase;
     z-index: 5;
+    display: inline;
+    text-align: center;
+    padding: 12px 21px;    
+    cursor: pointer;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 400;
+    line-height: 30.6px;
+    vertical-align: middle;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-size-adjust: 100%;
 }
 .nav-link:focus, .nav-link:hover, .navbar-nav .nav-link.show{
     color: #b59a01;
