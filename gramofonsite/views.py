@@ -21,7 +21,7 @@ def chylonia(request):
     return render(request, '/home/aneta/software/repos/gramofon/gramofon_page/gramofonsite/templates/site/gramofon/chylonia.html', context) 
 
 def contact(request):
-    return render(request, 'gramofonsite/templates/site/gramofon/contact.html')
+    return render(request, '/home/aneta/software/repos/gramofon/gramofon_page/gramofonsite/templates/site/gramofon/contact.html')
 
 
 def status(request):
