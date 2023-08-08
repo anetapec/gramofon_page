@@ -254,4 +254,12 @@ nav {
     z-index: 20;
   } 
 
+/* contakt.html */
 
+.article--page {
+  position: relative;
+  z-index: 0;
+  background-size: cover;
+  height: 400px; 
+  background-image: url(base.jpg);
+}
