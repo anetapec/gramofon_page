@@ -8,7 +8,7 @@ def gramofonsite_list(request):
 def morska(request):
     morska_obj = Local.objects.get(id=2)  # inquiry to database
     context = {'locals': locals, 'morska_obj': morska_obj }
-    return render(request, '/home/aneta/software/repos/gramofon/gramofon_page/gramofonsite/templates/site/gramofon/morska.html', context)
+    return render(request, '../templates/site/gramofon/gramofon/morska.html', context)
 
 def grabowek(request):
     grabowek_obj = Local.objects.get(id=1)  # inquiry to database
