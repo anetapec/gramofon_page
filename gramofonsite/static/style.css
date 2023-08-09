@@ -40,7 +40,9 @@ body {
 
     
 }
-.article__content.a, .a {
+
+.article__content.a, a.link
+{
     color: #b59a01;
 }
 
