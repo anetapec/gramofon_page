@@ -73,6 +73,10 @@ nav {
 }
 
 
+#contact {
+  background-color: rgb(25, 25, 26);
+
+}
 
 .nav-link:focus, .nav-link:hover, .navbar-nav .nav-link.show, .a, .aboutus-local-title  {
     color: #b59a01;
