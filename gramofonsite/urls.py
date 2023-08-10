@@ -14,6 +14,7 @@ urlpatterns = [
     path('gramofon-chylonia/', views.chylonia, name='chylonia'),
     path('regulamin/', views.statute, name='regulamin'),
     path('contact/', views.contact, name='contact'),
+    path('test/', views.test, name='test')
     
     
     

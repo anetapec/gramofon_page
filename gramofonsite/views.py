@@ -31,3 +31,6 @@ def contact(request):
 def statute(request):
     return render(request, 'statute.html')
 
+def test(request):
+    return render(request, 'test.html')
+
