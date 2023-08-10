@@ -14,7 +14,10 @@ urlpatterns = [
     path('gramofon-chylonia/', views.chylonia, name='chylonia'),
     path('regulamin/', views.statute, name='regulamin'),
     path('contact/', views.contact, name='contact'),
-    path('test/', views.test, name='test')
+    path('imprezy-cateringowe/', views.catering, name='imprezy-cateringowe'),
+    path('test/', views.test, name='test'),
+    path('template', views.template, name='template'),
+    path('templateG', views.templateG, name='templateG'),
     
     
     

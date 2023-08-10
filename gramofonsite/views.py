@@ -27,10 +27,19 @@ def chylonia(request):
 def contact(request):
     return render(request, 'contact.html')
 
+def catering(request):
+    return render(request, 'imprezy_cateringowe.html')
+
 
 def statute(request):
     return render(request, 'statute.html')
 
 def test(request):
     return render(request, 'test.html')
+
+def template(request):
+    return render(request, 'template.html')
+
+def templateG(request):
+    return render(request, 'templateG.html')
 

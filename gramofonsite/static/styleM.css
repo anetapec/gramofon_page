@@ -8,11 +8,15 @@
     /* color: #363535;  */
  /* } */
 
-.gramofon-morska, .gramofon-grabowek, .gramofon-chylonia  {
+.gramofon-morska, .gramofon-grabowek, .gramofon-chylonia, .imprezy-cateringowe  {
     position: relative;
     z-index: 0;
     background-size: cover;
     height: 400px; 
+}
+
+.imprezy-cateringowe {
+    background-image: url(catering.jpg);
 }
 
 .gramofon-chylonia {
@@ -49,6 +53,15 @@ h5 {
     font-family: 'Source Sans 3', sans-serif;
     margin: 0px 0px 30px ;
     }
+.headline__primary {
+    font-size: 20px;
+    color: #546d1d;
+    font-family: 'Source Sans 3', sans-serif;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
 
 .note {
     color: #4d4a4d;
