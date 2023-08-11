@@ -24,7 +24,7 @@ body {
     font-weight: 600;
 }
 
-.aboutus-local-title {
+.aboutus-local-title, .hero-text-head {
     font-size: 50px;
     font-family:  'Sahitya';
     font-weight: 700;
@@ -40,10 +40,28 @@ body {
 
     
 }
-
+/* przeniesione */
+.widget_title {
+    font-size: 19px;
+    color: #ffffff;
+    font-family: 'Source Sans 3', sans-serif;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+}
 .article__content.a, a.link
 {
     color: #b59a01;
+}
+h2.head-text {
+  color: #b59a01;
+  font-size: 50px;
+  font-family: 'Sahitya', serif;
+}
+.head-comunicat {
+  color: #ffffff;
+  font-family:  'Source Sans 3', sans-serif;
+  font-size: 20px;
 }
 
 .nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .fa-bars { 
@@ -74,11 +92,20 @@ nav {
 
 
 #contact {
-  background-color: rgb(25, 25, 26);
+  background-color: rgb(13, 13, 13);
 
 }
+.headline__primary {
+    font-size: 20px;
+    color: #546d1d;
+    font-family: 'Source Sans 3', sans-serif;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 
-.nav-link:focus, .nav-link:hover, .navbar-nav .nav-link.show, .a, .aboutus-local-title  {
+.nav-link:focus, .nav-link:hover, .navbar-nav .nav-link.show, .a, .aboutus-local-title, .hero-text-head  {
     color: #b59a01;
 }
 
@@ -138,7 +165,7 @@ header.hero-img {
     height: 100%;
     flex-direction: column;
     font-size: 18px;
-    letter-spacing: 3.901px;
+    /* letter-spacing: 3.901px; */
 }
 
 .fa-solid.fa-chevron-down {
