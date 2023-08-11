@@ -53,6 +53,16 @@ h5 {
     font-family: 'Source Sans 3', sans-serif;
     margin: 0px 0px 30px ;
     }
+
+     .widget_title {
+    font-size: 24px;
+    color: #262526;
+    font-family: 'Source Sans 3', sans-serif;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+      }
 .headline__primary {
     font-size: 20px;
     color: #546d1d;
@@ -81,6 +91,14 @@ h5 {
     font-size: 18px;
     font-family: 'Cabin', sans-serif;
 
+}
+
+p.link-regulamin, a.link {
+    color: #b59a01;
+    text-decoration: solid;
+    text-transform: uppercase;
+    font-family: Source Sans 3;
+    
 }
 
 .col-img {
