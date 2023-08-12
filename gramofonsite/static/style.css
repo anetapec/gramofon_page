@@ -74,9 +74,9 @@ h2.head-text {
   letter-spacing: 2px;
 }
 
-.hero-img-half {
-  min-height: 468.5px;
-}
+/* .hero-img-half { */
+  /* min-height: 468.5px; */
+/* } */
 
 .nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .fa-bars { 
     color: #ffffff;
@@ -165,15 +165,13 @@ header.hero-img {
 }
 .hero-img.hero-img-half {
     position: relative;
-    height: 30vh;
+    height: 350px;
     background-image: url("base.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: #ffffff;
     z-index: 0;
-    min-height: 468.5px;
-
 }
 .hero-shadow {
     position: absolute;
