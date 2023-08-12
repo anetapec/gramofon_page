@@ -49,6 +49,15 @@ body {
     z-index: 10;
     text-transform: uppercase;
 }
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
 .article__content.a, a.link
 {
     color: #b59a01;
@@ -56,12 +65,17 @@ body {
 h2.head-text {
   color: #b59a01;
   font-size: 50px;
-  font-family: 'Sahitya', serif;
+  font-family: 'Sahitya';
 }
 .head-comunicat {
   color: #ffffff;
   font-family:  'Source Sans 3', sans-serif;
   font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.hero-img-half {
+  min-height: 468.5px;
 }
 
 .nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .fa-bars { 
@@ -97,8 +111,7 @@ nav {
   background-color: rgb(13, 13, 13);
 
 }
-.
-ine__primary {
+.line__primary {
     font-size: 20px;
     color: #546d1d;
     font-family: 'Source Sans 3', sans-serif;
@@ -149,9 +162,18 @@ header.hero-img {
     background-attachment: fixed;
     color: #ffffff;
     z-index: 0;
-    
-    
-    
+}
+.hero-img.hero-img-half {
+    position: relative;
+    height: 30vh;
+    background-image: url("base.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    z-index: 0;
+    min-height: 468.5px;
+
 }
 .hero-shadow {
     position: absolute;

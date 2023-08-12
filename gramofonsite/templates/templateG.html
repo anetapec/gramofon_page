@@ -15,7 +15,7 @@
     </head>
   <body>
    
-    <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3">
+    <nav class="navbar navbar-expand-lg position-fixed sticky-top top-0 w-100">
         <div class="container">
           <a class="navbar-brand" href="/gramofon-lokal"><img src="/static/gramofon-logo_biale.png" height="43,63" width="200" alt="Gramofon w Gdyni"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +38,7 @@
       </nav>
 
 
-      <header class="hero-img" id="home">
+      <header class="hero-img hero-img-half" id="home">
         <div class="hero-text">
           <h2 class="head-text">{% block head %} {% endblock %}</h2>
           <h1 class="head-comunicat">{% block content %} {% endblock %}</h1>
@@ -51,5 +51,8 @@
 
         <main>
         </main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="../../static/js/script.js"></script>
     </body>
     </html>

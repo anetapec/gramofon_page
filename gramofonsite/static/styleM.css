@@ -72,6 +72,9 @@ h5 {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
+.site-footer{
+  background-color: rgb(13, 13, 13);
+}
 .title-menu {
   color: #262526;
   font-size: 24px;
