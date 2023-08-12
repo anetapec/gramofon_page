@@ -48,7 +48,7 @@ h5 {
 
 }
 .area {
-    color: #ffff;
+    color: #ffff !important;
     font-size: 18px;
     font-family: 'Source Sans 3', sans-serif;
     margin: 0px 0px 30px ;

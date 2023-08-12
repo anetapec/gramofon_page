@@ -46,7 +46,7 @@ body {
     color: #ffffff;
     font-family: 'Source Sans 3', sans-serif;
     position: relative;
-    z-index: 1;
+    z-index: 10;
     text-transform: uppercase;
 }
 .article__content.a, a.link
@@ -97,7 +97,8 @@ nav {
   background-color: rgb(13, 13, 13);
 
 }
-.headline__primary {
+.
+ine__primary {
     font-size: 20px;
     color: #546d1d;
     font-family: 'Source Sans 3', sans-serif;
