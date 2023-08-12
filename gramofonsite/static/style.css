@@ -50,6 +50,16 @@ body {
     text-transform: uppercase;
 }
 
+.contact-contact-info {
+    font-size: 24px;
+    color: #262526;
+    font-family: 'Source Sans 3', sans-serif;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+
 #contact {
     display: flex;
     justify-content: center;
