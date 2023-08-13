@@ -63,6 +63,13 @@ h5 {
     letter-spacing: 1px;
     text-transform: uppercase;
       }
+.widget_title_footer {
+    color: #fff;
+    font-size: 19px;
+    font-family: Source Sans 3, sans-serif;
+    position: relative;
+    z-index: 1;
+}
 .headline__primary {
     font-size: 20px;
     color: #546d1d;
@@ -74,6 +81,7 @@ h5 {
 }
 .site-footer{
   background-color: rgb(13, 13, 13);
+  color: #fff;
 }
 .title-menu {
   color: #262526;
