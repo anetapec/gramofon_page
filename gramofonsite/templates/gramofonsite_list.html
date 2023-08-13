@@ -20,6 +20,66 @@
   </header>
 {% endblock %}
 
+{% block title_page_on_head %}
+<main>
+
+  <article id="post-5" class="article--page article--main border-waves post-5 page type-page status-publish has-post-thumbnail hentry">
+  
+    <section id="home" class="home bg-light py-5">
+    
+      <div class="container mt-3"> 
+      <div class="row gx-1 ms-auto">
+          <h4 class="aboutus-card-title">
+          <strong>TRZY LOKALE DO WYBORU !</strong>
+          </h4>
+      </div>
+    </div>
+
+  {% endblock %}
+
+
+
+  {% block local_grabówek %}
+  <section class="article__content__grabowek">
+    <div class="container mt-3"> 
+      <div class="row gx-5 ms-auto">
+          <div class="col-sm-6">
+            <h2 class="aboutus-local-title text-break"> Grabówek</h2>
+
+        <div class="pixcode  pixcode--separator  separator separator--flower separator_color--dark">✻</div>
+
+        <p class="aboutus-local-note">Lokal 2 poziomowy o powierzchni 130 metrów <sup>2</sup> do 40 osób.</p>
+        <p>
+          <a class="link" href="gramofon-grabowek">Dowiedz się więcej ></a> 
+        </p> 
+        
+        </div>
+      <div class="col-sm-6">
+        <img class="img-fluid" src="../../static/gra_g.jpg" alt="sala taneczna">
+      </div>
+      {% block separator %}
+  <div class="pixcode  pixcode--separator  separator separator--line-flower">
+    <div class="line  line--left"></div>
+    <div class="line  line--right"></div>
+    <div class="star">✻</div>
+    <div class="arrows">
+    <div class="arrow arrow--left"></div>
+    <div class="arrow arrow--right"></div>
+  </div>
+
+      {% endblock %}
+</div>
+      </div>
+    </div>
+        </div>
+  </section>
+
+  {% endblock %}
+
+  
+
+
+
 
 
 
