@@ -1,32 +1,24 @@
-{% extends "base.html" %} 
-{% load static %} 
-{% block title %}Gramofon-Twoje miejsce na Urodziny i Imprezy w Gdyni{% endblock %}
-{% block content %}
-  {% block base_img %}
-  <body>
-    <link rel="stylesheet" href="/static/styles.css">
-  </body>    
-  {% endblock %}  
+{% extends "base.html" %}
+<html lang="pl">
 
-      <h3>
-        <strong>TRZY LOKALE DO WYBORU !</strong>
-      </h3>
-      
-    </section>
-  </div>
 
-</div>
-  {% for local in locals %}
- <h3>{{ local.title_local }}</h3>
- <link rel="stylesheet" href="{% static 'styles.css' %}">
- <p>{{ local.note_local }}</p>
- <p><a href="gramofon-morska">Dowiedz się więcej ></a></a></p>
- <img src="/media/image/{{local.image_base}}">
- {% endfor %}
- {% endblock %}  
+{% block title%}Gramofon - Twoje miejsce na Urodziny i Imprezy w Gdyni{% endblock %}
 
+<body>
 
+{% block title_page_base %}
+  <header class="hero-img" id="home">
+    <div class="hero-text">
+      <p>GRAMOFON<p>
+      <p>URODZINY I IMPREZY OKOLICZNOŚCIOWE</p>
+    </div>
+     <div class="hero-shadow">
+     <a href="./gramofon/morska.html"></a><i class="fa-solid fa-chevron-down"></i></a>
+    </div>
+  
 
+  </header>
+{% endblock %}
 
 
 
@@ -48,59 +40,6 @@
 
 
 
+</body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </html>

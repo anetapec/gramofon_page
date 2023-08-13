@@ -1,4 +1,4 @@
- {% extends "templateG.html" %}
+ {% extends "base.html" %}
 <html lang="pl">
   <!-- <head> -->
 <!--    -->
@@ -9,8 +9,19 @@
   <div class="container bg-light"> 
     {% block title %}Kontakt - Gramofon w Gdyni{% endblock %}
 
-    {% block head %} Zadzwoń do nas{% endblock %}
-      {% block content %}KONTAKT{% endblock %}
+
+
+    {% block contact_base_page %}
+    <header class="hero-img hero-img-half" id="home">
+      <div class="hero-text">
+        <h2 class="head-text">Zadzwoń do nas</h2>
+        <h1 class="head-comunicat">KONTAKT</h1>
+      </div>
+    
+    
+    </header>
+    {% endblock %}
+
 <section id="home" class="home bg-light py-5">
       {% block info_contact %}
       <div class="container bg-light"> 
