@@ -22,23 +22,23 @@
 {% block note1 %} {{grabowek_obj.banquet_hall_note|linebreaksbr  }} {% endblock %}
 
 {% block img_1 %} 
-<img class="img-fluid" src="/media/image/{{grabowek_obj.image_base}}">
+<img class="img-fluid" src="/media/image/{{grabowek_obj.banquet_hall_img}}">
 {% endblock %}
 
 
 {% block img_2 %} 
-<img class="img-fluid" src="/media/image/{{chylonia_obj.equipment_img}}">
+<img class="img-fluid" src="/media/image/{{grabowek_obj.equipment_img}}">
 {% endblock %}
 
-{% block title2 %}{{ chylonia_obj.equipment_title }} {% endblock %}
-{% block note2 %} {{ chylonia_obj.equipment_note|linebreaksbr }} {% endblock %}
+{% block title2 %}{{ grabowek_obj.equipment_title }} {% endblock %}
+{% block note2 %} {{ grabowek_obj.equipment_note|linebreaksbr }} {% endblock %}
 
 
-{% block title3 %} {{ chylonia_obj.toilet_title}} {% endblock %}
-{% block note3 %} {{ chylonia_obj.toilet_note|linebreaksbr}}{% endblock %}
+{% block title3 %} {{ grabowek_obj.dance_room_title }} {% endblock %}
+{% block note3 %} {{ grabowek_obj.dance_room_note|linebreaksbr }} {% endblock %}
 
 {% block img_3 %} 
-<img class="img-fluid" src="/media/image/{{chylonia_obj.toilet_img}}">
+<img class="img-fluid" src="/media/image/{{grabowek_obj.dance_room_img}}">
 {% endblock %}
 
 
