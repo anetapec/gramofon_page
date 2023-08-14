@@ -14,7 +14,7 @@
 
 {% block local_title %} {{ grabowek_obj.title_page }} {% endblock %}
 {% block street %} {{ grabowek_obj.street }} {% endblock %}
-{% block short_note %} Lokal 2 poziomowy o powierzchni 130 metrów <sup>2</sup>.</p> {% endblock %}
+{% block short_note %} Lokal dwupoziomowy o powierzchni 130 metrów <sup>2</sup>.</p> {% endblock %}
 
 
 
@@ -41,6 +41,35 @@
 <img class="img-fluid" src="/media/image/{{grabowek_obj.dance_room_img}}">
 {% endblock %}
 
+{% block toilet_grabowek %}
+
+<div class="pixcode  pixcode--separator  separator separator--line-flower">
+  <div class="line  line--left"></div>
+  <div class="line  line--right"></div>
+  <div class="star">✻</div>
+  <div class="arrows">
+  <div class="arrow arrow--left"></div>
+  <div class="arrow arrow--right"></div>
+  </div>
+</div>
+</div>
+        
+
+
+        </div>
+<div class="container"> 
+  <div class="row gx-5 ms-auto">
+    <div class="col-sm-6">
+      <img class="img-fluid" src="/media/image/{{grabowek_obj.toilet_img}}">
+    </div>
+    <div class="col-sm-6">
+      <h2 class="title">{{ grabowek_obj.toilet_title}}</h2>
+      <div class="pixcode  pixcode--separator  separator separator--flower separator_color--dark">✻</div>
+      <p class="note">{{ grabowek_obj.toilet_note }}</p>
+
+    </div>
+  </div>
+{% endblock %}
 
 </body>
 </html>
