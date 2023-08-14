@@ -14,15 +14,32 @@
 
 {% block local_title %} {{ morska_obj.title_page }} {% endblock %}
 {% block street %} {{ morska_obj.street }} {% endblock %}
-<!-- {% block short_note %} {% endblock %} -->
-<!-- {% block title1 %} {% endblock %} -->
-<!-- {% block note1 %} {% endblock %} -->
-<!--  -->
+{% block short_note %} Lokal o powierzchni 100 m <sup>2</sup> do 40 osób.{% endblock %}
+
+
+
+{% block title1 %} {{ morska_obj.dance_room_title }} {% endblock %}
+{% block note1 %} {{ morska_obj.dance_room_note|linebreaksbr }} {% endblock %}
 
 {% block img_1 %} 
 <img class="img-fluid" src="/media/image/{{morska_obj.image_base}}">
 {% endblock %}
 
+
+{% block img_2 %} 
+<img class="img-fluid" src="/media/image/{{morska_obj.toilet_img}}">
+{% endblock %}
+
+{% block title2 %}{{ morska_obj.toilet_title}} {% endblock %}
+{% block note2 %} {{ morska_obj.toilet_note }} {% endblock %}
+
+
+{% block title3 %} {{ morska_obj.kitchen_title }} {% endblock %}
+{% block note3 %} {{ morska_obj.kitchen_note|linebreaksbr}}{% endblock %}
+
+{% block img_3 %} 
+<img class="img-fluid" src="/media/image/{{morska_obj.kitchen_img}}">
+{% endblock %}
 
 
 </body>
