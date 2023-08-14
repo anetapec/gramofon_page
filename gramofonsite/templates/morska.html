@@ -1,8 +1,15 @@
 {% extends "base2.html" %}
 <html lang="pl">
 
-
+<head>
 {% block title %} Gramofon Morska - Gramofon w Gdyni {% endblock title %}
+</head>
+
+
+<body>
+{% block img_bcg %} 
+<section id="gramofon-morska" class="gramofon-morska">
+  {% endblock %}
 
 
 {% block local_title %} {{ morska_obj.title_page }} {% endblock %}
@@ -18,5 +25,5 @@
 
 
 
-
+</body>
 </html>
