@@ -123,6 +123,9 @@ nav {
     text-size-adjust: 100%;
 }
 
+#nav-dark {
+  color: #605e5e;
+}
 
 #contact {
   background-color: rgb(13, 13, 13);
@@ -170,7 +173,20 @@ nav {
     max-width: 100%;
 }
 
+#nav-dark {
+  color: #262526;
+  font-size: 13px;
+  font: 'Cabin';
+  letter-spacing: 1px;
+}
 
+/* by pasek nawigacyjny był ciemna czcionka */
+/* .nav-link { */
+  /* color: #262526; */
+  /* font-size: 13px; */
+  /* font: 'Cabin'; */
+  /* letter-spacing: 1px; */
+/* } */
 
 /* tu zrobić by podkresliło aktywny element a nie na żółto */
 /* .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{ */
@@ -273,7 +289,9 @@ h5 {
   font-family: 'Source Sans 3', sans-serif;
   margin: 0px 0px 30px ;
   }
-
+.street {
+  letter-spacing: 2px;
+}
 .title-menu {
   color: #262526;
   font-size: 24px;
