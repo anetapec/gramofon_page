@@ -274,6 +274,47 @@ h5 {
   margin: 0px 0px 30px ;
   }
 
+.title-menu {
+  color: #262526;
+  font-size: 24px;
+  font-family: Source Sans 3, sans-serif;
+  text-transform: uppercase;
+}
+
+.b {
+  font-weight: 600;
+  font-family: Source Sans 3, sans-serif;
+  font-size: 24px;
+  color: #515151;
+}
+
+.note {
+    color: #4d4a4d;
+    font-size: 18px;
+    font-family: 'Cabin', sans-serif;
+
+}
+
+a.link {
+  color: #b59a01;
+  text-decoration: solid;
+  font-family: Source Sans 3;
+  text-decoration: underline;
+  padding-bottom: 2px;
+}
+
+.col-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-12 {
+  min-height: 50%;
+  background-color: #333;
+
+}
+
 
 @media (min-width: 768px) {
     .hero-text.p {
@@ -362,6 +403,11 @@ h5 {
     color: #c59d5f;
   }
   
+  .site-footer{
+    background-color: rgb(13, 13, 13);
+    color: #fff;
+  }
+
   .article--page.border-waves:before {
     top: -7px;
     background-position: top;
