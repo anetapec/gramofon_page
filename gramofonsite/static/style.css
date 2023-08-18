@@ -180,6 +180,10 @@ nav {
   letter-spacing: 1px;
 }
 
+.nav-link:active {
+  text-decoration: underline;
+}
+
 /* by pasek nawigacyjny był ciemna czcionka */
 /* .nav-link { */
   /* color: #262526; */
@@ -187,6 +191,7 @@ nav {
   /* font: 'Cabin'; */
   /* letter-spacing: 1px; */
 /* } */
+
 
 /* tu zrobić by podkresliło aktywny element a nie na żółto */
 /* .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{ */
