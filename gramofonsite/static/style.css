@@ -49,6 +49,13 @@ body {
     z-index: 10;
     text-transform: uppercase;
 }
+.widget_title_footer {
+  color: #fff;
+  font-size: 19px;
+  font-family: Source Sans 3, sans-serif;
+  position: relative;
+  z-index: 1;
+}
 
 .contact-contact-info {
     font-size: 24px;
@@ -121,15 +128,23 @@ nav {
   background-color: rgb(13, 13, 13);
 
 }
-.line__primary {
-    font-size: 20px;
-    color: #546d1d;
-    font-family: 'Source Sans 3', sans-serif;
-    position: relative;
-    z-index: 1;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+.headline__primary {
+  font-size: 20px;
+  color: #fff;
+  font-family: 'Source Sans 3', sans-serif;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
+
+
+
+
+
+
+
+
 
 .nav-link:focus, .nav-link:hover, .navbar-nav .nav-link.show, .a, .aboutus-local-title, .hero-text-head  {
     color: #b59a01;
@@ -212,6 +227,53 @@ header.hero-img {
     height: 80px;
     cursor: pointer;
 }
+
+.gramofon-morska, .gramofon-grabowek, .gramofon-chylonia, .imprezy-cateringowe  {
+  position: relative;
+  z-index: 0;
+  background-size: cover;
+  height: 400px; 
+}
+
+.imprezy-cateringowe {
+  background-image: url(catering.jpg);
+}
+
+.gramofon-chylonia {
+  background-image: url(chyl_pas.jpg);
+} 
+
+.gramofon-morska {
+  background-image: url(mor_pas.jpg);
+}
+
+.gramofon-grabowek {
+  background-image: url(grab_pas.jpg);
+}
+
+h2 {
+  color: #B59A01;
+  font-size: 50px;
+  font-family: 'Sahitya',  serif;
+  margin: 0px -72px -4px;
+  padding: 0px 72px;
+  text-align: center;
+}
+
+h5 {
+  color: #fff;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 20px;
+  margin: 0px -2px 0px 0px;
+}
+
+.area {
+  color: #ffff !important;
+  font-size: 18px;
+  font-family: 'Source Sans 3', sans-serif;
+  margin: 0px 0px 30px ;
+  }
+
 
 @media (min-width: 768px) {
     .hero-text.p {
