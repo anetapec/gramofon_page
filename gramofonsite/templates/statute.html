@@ -1,18 +1,28 @@
 {% extends "base2.html" %}
 
 <title>{% block title %} Regulamin - Gramofon w Gdyni {% endblock %}</title>
-{% block heading %}
-<header class="c-hero.half-height">
-  <div class="container" id="bcg-no-image">
-    <h1 class="headline__primary"> Regulamin</h1>
-{% endblock %}
 
-    
+<body>
+
+  {% block logo %}<img src="/static/gramofon-logo_rgb.png" height="43,63" width="200" alt="Gramofon w Gdyni" id="logo-dark">{% endblock %}
+
+  {% block img_bcg %} 
+  <section id="statute" class="statute">
+  {% endblock %}
 
 
-
-
+  {% block heading %}
+<!--  -->
+<div class="container-fluid d-flex flex-column justify-content-center align-items-center text-center">
+  <div class="row">
+    <div class="col-sm-12 headline_statute">
+      <h5 class="headline__primary">Regulamin</h5>
+    </div>
   </div>
+</div>
+{% endblock %}
+<!--  -->
+</body>
 
 
 
@@ -20,6 +30,7 @@
 
 
 
-</header>
 
-<!-- </html> -->
+
+
+
