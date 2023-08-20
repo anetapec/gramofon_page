@@ -52,9 +52,11 @@
       <div class="row gx-5 ms-auto">
         <div class="col-sm-6">
           <h2 class="title"> {% block title1 %} {% endblock %}</h2>
+         {% if star %}
           {% block star %}
           <div class="pixcode  pixcode--separator  separator separator--flower separator_color--dark">✻</div>
           {% endblock %}
+          {% endif %}
           <p class="note"> {% block note1 %} {% endblock %}</p>
         </div>
         <div class="col-sm-6 gy-3">
@@ -64,6 +66,7 @@
 
         </div>
         </div>
+        {% if separator %}
         {% block separator %}
         <div class="pixcode  pixcode--separator  separator separator--line-flower">
           <div class="line  line--left"></div>
@@ -75,7 +78,8 @@
           </div>
         </div>
         </div>
-        {% endblock%}
+        {% endblock %}
+        {% endif %}
         <div class="container"> 
       <div class="row ms-auto">
         <div class="col-sm-6 gy-3">
