@@ -272,9 +272,10 @@ header.hero-img {
   z-index: 0;
   background-size: cover;
   height: 400px; 
+  
 }
 
-.statute {
+.statute, .aboutus-local-title, .porcelain_rental {
   position: relative;
   z-index: 0;
   background-size: cover;
@@ -297,7 +298,7 @@ header.hero-img {
   background-image: url(grab_pas.jpg);
 }
 
-.statute {
+.statute, .porcelain_rental {
   background-color: #333;
 }
 
