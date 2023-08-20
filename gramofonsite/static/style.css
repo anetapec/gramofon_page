@@ -47,7 +47,18 @@ body {
     position: relative;
     z-index: 10;
     text-transform: uppercase;
+  
 }
+.catering_title {
+  color: #262526;
+  font-size: 24px;
+  font-family: 'Source Sans 3', sans-serif;
+  text-transform: uppercase;
+  z-index: 5;
+  position: relative;
+
+}
+
 .widget_title_footer {
   color: #fff;
   font-size: 19px;
