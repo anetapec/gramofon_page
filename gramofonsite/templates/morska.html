@@ -15,11 +15,19 @@
 
 
 {% block title1 %} {{ morska_obj.dance_room_title }} {% endblock %}
+
+{% block star %}
+{% endblock %}
+
 {% block note1 %} {{ morska_obj.dance_room_note|linebreaksbr }} {% endblock %}
 
 {% block img_1 %} 
 <img class="img-fluid" src="/media/image/{{morska_obj.image_base}}">
 {% endblock %}
+
+
+{% block separator %}
+{% endblock%}
 
 
 {% block img_2 %} 
