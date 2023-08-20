@@ -41,6 +41,7 @@
         <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center">
           <h2 class="headline__secondary py-3">{% block local_title %} {% endblock %}</h2>
           <h5 class="street">{% block street %} {% endblock %}</h5>
+          <h5 class="street">{% block title_events %} {% endblock %} </h5>
           <div>
           <p class="area">{% block short_note %} {% endblock %}</p>
         </div>
@@ -117,6 +118,21 @@
       
       {% block content_catering_events %}
       {% endblock %}
+
+      {% block bcg_no_photo %} 
+      <div class="container-fluid h-100 d-flex flex-column justify-content-center align-items-center text-center">
+        <div class="row">
+          <div class="col-sm-12">
+
+          </div>
+        </div>
+        <div>
+          <h5 class="street">WYPOŻYCZENIE PORCELANY</h5>
+      </div>
+      </div>
+      {% endblock %}    
+      
+      
       </section>
      
       
