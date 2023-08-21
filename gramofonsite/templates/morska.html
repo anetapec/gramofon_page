@@ -16,8 +16,7 @@
 
 {% block title1 %} {{ morska_obj.dance_room_title }} {% endblock %}
 
-{% block star %}
-{% endblock %}
+
 
 {% block note1 %} {{ morska_obj.dance_room_note|linebreaksbr }} {% endblock %}
 
@@ -26,8 +25,7 @@
 {% endblock %}
 
 
-{% block separator %}
-{% endblock%}
+{% include "separator.html" %}
 
 
 {% block img_2 %} 
@@ -35,10 +33,14 @@
 {% endblock %}
 
 {% block title2 %}{{ morska_obj.toilet_title}} {% endblock %}
+<div class="pixcode  pixcode--separator  separator separator--flower separator_color--dark">✻</div>
+
 {% block note2 %} {{ morska_obj.toilet_note }} {% endblock %}
 
 
 {% block title3 %} {{ morska_obj.kitchen_title }} {% endblock %}
+<div class="pixcode  pixcode--separator  separator separator--flower separator_color--dark">✻</div>
+
 {% block note3 %} {{ morska_obj.kitchen_note|linebreaksbr}}{% endblock %}
 
 {% block img_3 %} 
