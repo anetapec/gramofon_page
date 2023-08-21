@@ -6,6 +6,14 @@ class HeadPage(models.Model):
     image_background = models.ImageField(upload_to="image", null=True, blank=True)
 
 
+
+
+
+
+
+
+
+
 class Local(models.Model):
     
     title_local = models.CharField(max_length=20, verbose_name="Nazwa lokalu")
@@ -42,4 +50,18 @@ class Local(models.Model):
     def __str_(self):
         return self.title_local
     
+class Advantages(models.Model):
+    special_features = models.CharField(max_length=200, default="zalety", verbose_name="Cechy szczególne - wypunktowanie")
+    advantages = models.ForeignKey(Local, on_delete=models.CASCADE)
+    
+
+    def __str__(self): 
+        return self.special_features
+    
+    
+
+
+
+
+
 

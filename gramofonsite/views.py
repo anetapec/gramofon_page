@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Local
+from .models import Local, Advantages
 
 
 def index(request):
