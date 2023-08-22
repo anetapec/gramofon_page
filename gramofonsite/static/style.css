@@ -36,6 +36,7 @@ body {
     font-size: 1.22em;
     padding-left: 72px;
     letter-spacing: 72px;
+    margin: 0 -72px;
 
     
 }
@@ -307,6 +308,7 @@ h2 {
   font-family: 'Sahitya',  serif;
   padding: 0px 72px;
   text-align: center;
+  margin: 0px -72px -4px;
 }
 
 h5 {
