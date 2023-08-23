@@ -267,6 +267,14 @@ header.hero-img {
     cursor: pointer;
 }
 
+i, .fa-brands {
+  opacity: 0.5;
+}
+
+i, .fa-brands:hover {
+  opacity: 1;
+}
+
 .gramofon-morska, .gramofon-grabowek, .gramofon-chylonia, .imprezy-cateringowe, .headline_statute {
   position: relative;
   z-index: 0;
