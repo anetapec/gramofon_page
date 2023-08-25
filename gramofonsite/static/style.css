@@ -288,6 +288,9 @@ i, .fa-brands:hover {
 
 .statute, .aboutus-local-title, .porcelain_rental {
   z-index: 0;
+  position: relative;
+  height: 300px; 
+
 }
 
 .imprezy-cateringowe {
