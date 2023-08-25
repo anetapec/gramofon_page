@@ -320,9 +320,10 @@ i, .fa-brands:hover {
 
 #bottom-top-button {
   position: fixed;
-  bottom: 10px;
-  margin: 0 auto;
+  margin: 10 auto 10 auto;
   padding: 10px;
+  background-color: black;
+  color: #ffff;
 }
 
 h2 {
