@@ -321,6 +321,12 @@ i, .fa-brands:hover {
 
 }
 
+#rent-text {
+  margin-left: 40%;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
 #bottom-top-button {
   position: fixed;
   margin: 10 auto 10 auto;
