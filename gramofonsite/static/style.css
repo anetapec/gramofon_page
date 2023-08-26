@@ -316,7 +316,8 @@ i, .fa-brands:hover {
 
 #bottom-top {
   height: 100px;
-  background-color: #262526;  
+  background-color: #262526; 
+  color: #fff; 
   
 
 }
@@ -328,11 +329,13 @@ i, .fa-brands:hover {
 }
 
 #bottom-top-button {
-  position: fixed;
-  margin: 10 auto 10 auto;
-  padding: 10px;
+  padding: 20px;
   background-color: black;
   color: #ffff;
+  align-items: center;
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
 }
 
 h2 {
