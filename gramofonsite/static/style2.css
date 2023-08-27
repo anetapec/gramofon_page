@@ -228,6 +228,7 @@ nav {
     align-items: center;
     height: 100%;
     flex-direction: column;
+    transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 .fa-solid.fa-chevron-down {

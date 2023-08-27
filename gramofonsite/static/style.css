@@ -354,6 +354,24 @@ h5 {
   margin: 0px -2px 0px 0px;
 }
 
+.title-base-page {
+  margin-right: -0.1em;
+  letter-spacing: 0.2em;
+  font-size: 20px;
+  font-family: 'Source Sans 3', sans-serif;
+  margin: 0px -2px 0px 0px;
+}
+
+.description-headline {
+  margin: 0px 0px 12px;
+  font-size: 15px;
+  font-family: 'Source Sans 3', sans-serif;
+  letter-spacing: 0.25em;
+} 
+
+
+
+
 .area {
   color: #ffff !important;
   font-size: 18px;
