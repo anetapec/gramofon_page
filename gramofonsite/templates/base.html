@@ -15,7 +15,7 @@
     </head>
   <body>
    
-    <nav class="navbar navbar-expand-lg position-fixed sticky-top top-0 w-100">
+    <nav {% block nav %}{% endblock %}>
         <div class="container">
           <a class="navbar-brand" href="/gramofon-lokal">{% block logo %} {% endblock %}</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,7 +71,93 @@
 {% endblock %}     
      
      
-     
+<!--page marska  -->
+
+{% block img_bcg %} 
+{% endblock %}
+
+
+        <div class="container h-100 d-flex flex-column justify-co
+          <h2 class="headline__secondary py-3">{% block local_tit
+          <h5 class="street">{% block street %} {% endblock %}</h
+          <h5 class="street">{% block title_events %} {% endblock
+          <div>
+          <p class="area">{% block short_note %} {% endblock %}</
+        </div>
+          <div class="hero-shadow"></div>
+        </div>
+      </section>
+      <section id="gramofon-chylonia" class="bg-light py-5">
+        <div class="container"> 
+      <div class="row ms-auto">
+        <div class="col-sm-6">
+          <h2 class="title"> {% block title1 %} {% endblock %}</h
+          <div class="pixcode  pixcode--separator  separator sepa
+       
+       
+          <p class="note"> {% block note1 %} {% endblock %}</p>
+        </div>
+        <div class="col-sm-6 gy-3">
+          <div class="col-img py-3">
+            {% block img_1 %} 
+            {% endblock %}
+
+        </div>
+        </div>
+        {% if separator %}
+        {% block separator %}
+        <div class="pixcode  pixcode--separator  separator separa
+          <div class="line  line--left"></div>
+          <div class="line  line--right"></div>
+          <div class="star">✻</div>
+          <div class="arrows">
+          <div class="arrow arrow--left"></div>
+          <div class="arrow arrow--right"></div>
+          </div>
+        </div>
+        </div>
+        {% endblock %}
+        {% endif %}
+        <div class="container"> 
+      <div class="row ms-auto">
+        <div class="col-sm-6 gy-3">
+          {% block img_2 %} 
+          {% endblock %}
+          
+        </div>
+        <div class="col-sm-6">
+          <h2 class="title">{% block title2 %} {% endblock %}</h2
+          <p class="note">{% block note2 %} {% endblock %}</p>
+        </div>
+       
+       
+       
+      </div>
+        <div class="container"> 
+      <div class="row ms-auto">
+        <div class="col-sm-6">
+          <h2 class="title">{% block title3 %} {% endblock %}</h2
+          <p class="note">{% block note3 %} {% endblock %}</p>
+        </div>
+        <div class="col-sm-6 gy-3">
+          {% block img_3 %} 
+          {% endblock %}
+        </div>
+      </div>
+      </div>
+
+      {% block toilet_grabowek %}
+      {% endblock %}
+
+      {% block content_statute %}
+      {% endblock %}   
+      
+      
+      {% block content_catering_events %}
+      {% endblock %}
+
+
+
 
 
 

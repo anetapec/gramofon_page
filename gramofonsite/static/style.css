@@ -191,6 +191,10 @@ nav {
     max-width: 100%;
 }
 
+#nav-light {
+  color: #ffffff;
+}
+
 #nav-dark {
   color: #262526;
   font-size: 13px;
@@ -204,7 +208,7 @@ nav {
 
 /* by pasek nawigacyjny był ciemna czcionka */
 .nav-link {
-  color: #181718;
+  color: #ffffff;
   font-size: 13px;
   font: 'Cabin';
   letter-spacing: 1px;
