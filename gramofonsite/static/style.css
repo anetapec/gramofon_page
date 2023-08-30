@@ -38,8 +38,14 @@ body {
     letter-spacing: 72px;
     margin: 0;
 
+
     
 }
+
+.headline__secondary {
+  position: absolute;
+}
+
 .widget_title {
     font-size: 19px;
     color: #ffffff;
