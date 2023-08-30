@@ -1,11 +1,18 @@
-{% extends "base2.html" %}
+{% extends "base.html" %}
 
 {% block title %} Gramofon Morska - Gramofon w Gdyni {% endblock title %}
+
+
+
+{% block nav %} class="navbar navbar-dark navbar-expand-lg position-fixed  w-100 id="nav-dark" {% endblock %}
+{% block logo %}<img src="../static/gramofon-logo_rgb.png" height="43,63" width="200" alt="Gramofon w Gdyni">{% endblock %}
 
 
 {% block img_bcg %} 
 <section id="gramofon-morska" class="gramofon-morska">
   {% endblock %}
+
+  
 
 
 {% block local_title %} {{ morska_obj.title_page }} {% endblock %}
