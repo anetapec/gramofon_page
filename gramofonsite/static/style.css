@@ -291,7 +291,8 @@ i, .fa-brands:hover {
 .gramofon-morska, .gramofon-grabowek, .gramofon-chylonia, .imprezy-cateringowe, .headline_statute {
   position: relative;
   background-size: cover;
-  height: 400px; 
+  height: 250px; 
+  top: 70px;
   
 }
 
