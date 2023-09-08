@@ -3,19 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>currency table</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      width: 100vw;
+      background-color: #363d57;
+    }
+
+    .container {
+      width: 400px;
+      background-color: white;
+      border-radius: 10px;
+    }
+
+    .container h3 {
+      text-align: center;
+    }
+
+    .rate {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 5px;
+      margin: 10px;
+      border-bottom: 1px dotted black;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <h3>Tabela NBP nr: <span id="date"></span> </h3>
+    <div id="data-table">
 
-  <div id="content"></div>
+    </div>
+  </div>
   <script>
+    startApp();
+    async function startApp() {
+      const apiUrl = "http://api.nbp.pl/api/exchangerates/tables/a?format=json";
+      const response = await fetch(apiUrl);
+      const data = await response.json();
+      // console.log(data);
+    
+      processData(data[0]);
+    }
 
-
-    // tworzymy uchwyt do naszego elementu div 
-    let div = document.getElementById("content");
-    div.innerHTML = "Hello World!";
+    function processData(data) {
+      console.log(data);
+    }
 
   </script>
-  
 </body>
 </html>
