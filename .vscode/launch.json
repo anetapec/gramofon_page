@@ -2,6 +2,7 @@
     "version": "0.2.0",
     "configurations": [
 
+
         {
             "name": "Python: update",
             "type": "python",
@@ -9,6 +10,13 @@
             "program": "automation/update.py",
             "console": "integratedTerminal",
             "justMyCode": true
+        },
+
+        {
+            "name": "Launch test.html in Firefox Debugger",
+            "type": "firefox",
+            "request": "launch",
+            "file": "${workspaceFolder}/gramofonsite/templates/test.html"
         }
     ]
 }
